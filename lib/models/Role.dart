@@ -1,0 +1,6 @@
+enum Role {
+ STUDENT, 
+ TEACHER, 
+ ADMIN,
+ RESPONSABLE,
+}

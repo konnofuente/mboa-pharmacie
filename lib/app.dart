@@ -1,0 +1,33 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:mboa_pharmacie/bloc/bloc_export.dart';
+import 'package:mboa_pharmacie/resources/route_manager.dart';
+import 'gestion_hospital.dart';
+
+
+class MyApp extends StatefulWidget {
+  // ignore: prefer_const_constructors_in_immutables
+  MyApp._internal();
+  int appState = 0;
+
+  static final MyApp instance = MyApp._internal();
+
+  factory MyApp() => instance;
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.mboaPharmacieRoute,
+       onUnknownRoute: (settings) => RouteGenerator.unDefinedRoute(), // Good practice to handle unknown routes
+    
+    );
+  }
+}

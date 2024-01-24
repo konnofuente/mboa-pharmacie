@@ -1,0 +1,264 @@
+-- Merging decision tree log ---
+application
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:15:4-47:19
+MERGED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ap\.gradle\caches\transforms-3\6c6ebb18812b70665ab1558aa182530c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ap\.gradle\caches\transforms-3\6c6ebb18812b70665ab1558aa182530c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+	android:name
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml
+manifest
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:1:1-48:12
+MERGED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:1:1-48:12
+MERGED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:connectivity] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-14:12
+MERGED from [:path_provider_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_secure_storage] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\flutter_secure_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [:connectivity_plus] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:babstrap_settings_screen] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\babstrap_settings_screen\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:webview_flutter_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\ap\.gradle\caches\transforms-3\b0b9e7f332139a7c0dfdf6f6e1c65a62\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.1] C:\Users\ap\.gradle\caches\transforms-3\7b155fe2ee4bf3d180384b7115f57b83\transformed\jetified-activity-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\6a2c87a334cd8333d929918b036bde1c\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\4d89d69f3cfbc469a7cc750a1f02f5bb\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\b722167262f1e5396ee28b512722ebd0\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\e8acb50000ad22c6b6327239ba782f3a\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.webkit:webkit:1.5.0] C:\Users\ap\.gradle\caches\transforms-3\88748a8ce8d688d2be555644e0e19344\transformed\webkit-1.5.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\c5339d3db406b1137920bc4285faab73\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\6d69aac8ba27c0046d12767bcbea90ed\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\fbc8d7fc981b98ac013e8e47418f6ad6\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\ap\.gradle\caches\transforms-3\124b5def7f885ad47c3ffda4318180be\transformed\exifinterface-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.security:security-crypto:1.1.0-alpha04] C:\Users\ap\.gradle\caches\transforms-3\b346c63bdec8a4875662b643a4df76e3\transformed\jetified-security-crypto-1.1.0-alpha04\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\4fbbabdacad43ad74453dba03aa00dff\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ap\.gradle\caches\transforms-3\6c6ebb18812b70665ab1558aa182530c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\a083edbdf7e9539ee2fa3e9c8dc3d19d\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\ap\.gradle\caches\transforms-3\0bd29ea21f6596d16e2acd4f3222c7c2\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ap\.gradle\caches\transforms-3\8182c1bbbca61bb31823f22e30a07df7\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\9f4c8600a6bf37860ee26d2142b1a91f\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ap\.gradle\caches\transforms-3\3e0a91c4032f7be8a456753054e2a59b\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ap\.gradle\caches\transforms-3\902a1e261624a0bbbac13257c5bcf1bd\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:2:5-41
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:1:1-48:12
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\debug\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:1:1-48:12
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:6:5-89
+	android:name
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:6:22-86
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#com.example.towntour.permission.MAPS_RECEIVE
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:8:5-84
+	android:name
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:8:22-81
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:9:5-79
+MERGED from [:connectivity] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:connectivity] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:connectivity_plus] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:connectivity_plus] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:9:22-76
+uses-permission#android.permission.CALL_PHONE
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:10:5-69
+	android:name
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:10:22-66
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:11:22-72
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:12:7-70
+	android:name
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:12:24-67
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:13:5-98
+	android:name
+		ADDED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:13:22-95
+uses-sdk
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml
+MERGED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_secure_storage] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\flutter_secure_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:53
+MERGED from [:flutter_secure_storage] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\flutter_secure_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:53
+MERGED from [:connectivity_plus] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:babstrap_settings_screen] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\babstrap_settings_screen\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:babstrap_settings_screen] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\babstrap_settings_screen\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\ap\.gradle\caches\transforms-3\b0b9e7f332139a7c0dfdf6f6e1c65a62\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\ap\.gradle\caches\transforms-3\b0b9e7f332139a7c0dfdf6f6e1c65a62\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.1] C:\Users\ap\.gradle\caches\transforms-3\7b155fe2ee4bf3d180384b7115f57b83\transformed\jetified-activity-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.1] C:\Users\ap\.gradle\caches\transforms-3\7b155fe2ee4bf3d180384b7115f57b83\transformed\jetified-activity-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\6a2c87a334cd8333d929918b036bde1c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\6a2c87a334cd8333d929918b036bde1c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\4d89d69f3cfbc469a7cc750a1f02f5bb\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\4d89d69f3cfbc469a7cc750a1f02f5bb\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\b722167262f1e5396ee28b512722ebd0\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\b722167262f1e5396ee28b512722ebd0\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\e8acb50000ad22c6b6327239ba782f3a\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\e8acb50000ad22c6b6327239ba782f3a\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.5.0] C:\Users\ap\.gradle\caches\transforms-3\88748a8ce8d688d2be555644e0e19344\transformed\webkit-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.5.0] C:\Users\ap\.gradle\caches\transforms-3\88748a8ce8d688d2be555644e0e19344\transformed\webkit-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\c5339d3db406b1137920bc4285faab73\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\c5339d3db406b1137920bc4285faab73\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\6d69aac8ba27c0046d12767bcbea90ed\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\6d69aac8ba27c0046d12767bcbea90ed\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\fbc8d7fc981b98ac013e8e47418f6ad6\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\fbc8d7fc981b98ac013e8e47418f6ad6\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\ap\.gradle\caches\transforms-3\124b5def7f885ad47c3ffda4318180be\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\ap\.gradle\caches\transforms-3\124b5def7f885ad47c3ffda4318180be\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.security:security-crypto:1.1.0-alpha04] C:\Users\ap\.gradle\caches\transforms-3\b346c63bdec8a4875662b643a4df76e3\transformed\jetified-security-crypto-1.1.0-alpha04\AndroidManifest.xml:20:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha04] C:\Users\ap\.gradle\caches\transforms-3\b346c63bdec8a4875662b643a4df76e3\transformed\jetified-security-crypto-1.1.0-alpha04\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\4fbbabdacad43ad74453dba03aa00dff\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ap\.gradle\caches\transforms-3\4fbbabdacad43ad74453dba03aa00dff\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ap\.gradle\caches\transforms-3\6c6ebb18812b70665ab1558aa182530c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ap\.gradle\caches\transforms-3\6c6ebb18812b70665ab1558aa182530c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\a083edbdf7e9539ee2fa3e9c8dc3d19d\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\a083edbdf7e9539ee2fa3e9c8dc3d19d\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\ap\.gradle\caches\transforms-3\0bd29ea21f6596d16e2acd4f3222c7c2\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\ap\.gradle\caches\transforms-3\0bd29ea21f6596d16e2acd4f3222c7c2\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ap\.gradle\caches\transforms-3\8182c1bbbca61bb31823f22e30a07df7\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ap\.gradle\caches\transforms-3\8182c1bbbca61bb31823f22e30a07df7\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\9f4c8600a6bf37860ee26d2142b1a91f\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\ap\.gradle\caches\transforms-3\9f4c8600a6bf37860ee26d2142b1a91f\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ap\.gradle\caches\transforms-3\3e0a91c4032f7be8a456753054e2a59b\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ap\.gradle\caches\transforms-3\3e0a91c4032f7be8a456753054e2a59b\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ap\.gradle\caches\transforms-3\902a1e261624a0bbbac13257c5bcf1bd\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ap\.gradle\caches\transforms-3\902a1e261624a0bbbac13257c5bcf1bd\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\debug\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [:flutter_secure_storage] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\flutter_secure_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-50
+	android:targetSdkVersion
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\debug\AndroidManifest.xml
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
+	android:exported
+		ADDED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
+	android:resource
+		ADDED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
+	android:name
+		ADDED from [:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+provider#io.flutter.plugins.share.ShareFileProvider
+ADDED from [:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
+	android:exported
+		ADDED from [:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-70
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\ap\.gradle\caches\transforms-3\101f929c990b91a0ec99476176aa9a01\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+permission#com.example.mboa_pharmacie.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#com.example.mboa_pharmacie.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
