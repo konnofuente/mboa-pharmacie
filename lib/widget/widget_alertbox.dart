@@ -1,6 +1,6 @@
-import 'package:awesome_dialog/awesome_dialog.dart';
-import 'package:flutter/material.dart';
 import '../Theme/app_theme.dart';
+import 'package:flutter/material.dart';
+import 'package:awesome_dialog/awesome_dialog.dart';
 
 class AlertBox {
   static Future<String?> alertbox(BuildContext context, String title,
@@ -76,7 +76,7 @@ class AlertBox {
       title: title,
       desc: message,
       showCloseIcon: true,
-      btnOkColor: AppColors.primaryblue,
+      btnOkColor: AppColors.primary,
       btnOkOnPress: () {
         onpressedOK();
       },

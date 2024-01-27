@@ -1,17 +1,13 @@
-import 'package:flutter/material.dart';
 import '../Theme/app_theme.dart';
+import 'package:flutter/material.dart';
 
 class WidgetButton {
   // WidgetIcon._();
-  static ElevatedButton largeButton(
-      String text,
-      TextStyle textStyle,
-      Color backgroundColor,
-      Widget? logo,
-      void Function() onpressed) {
+  static ElevatedButton largeButton(String text, TextStyle textStyle,
+      Color backgroundColor, Widget? logo, void Function() onpressed) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-          onSurface: AppColors.primaryblue,
+          onSurface: AppColors.primary,
           primary: backgroundColor,
           fixedSize: const Size(350, 50)),
       child: Row(
@@ -34,9 +30,7 @@ class WidgetButton {
   }
 
   static TextButton textButton(
-      String text,
-      TextStyle textStyle,
-      void Function() onpressed) {
+      String text, TextStyle textStyle, void Function() onpressed) {
     return TextButton(
       child: Text(
         text,
@@ -47,6 +41,4 @@ class WidgetButton {
       },
     );
   }
-
-  
 }

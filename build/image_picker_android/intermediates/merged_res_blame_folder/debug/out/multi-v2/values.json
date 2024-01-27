@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ap\\Documents\\Project\\flutter\\MBOAPHARMACIE\\build\\image_picker_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\ap\\Documents\\Project\\flutter\\mboa-pharmacie\\build\\image_picker_android\\intermediates\\merged_res\\debug\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ap\\.gradle\\caches\\transforms-3\\4d89d69f3cfbc469a7cc750a1f02f5bb\\transformed\\lifecycle-viewmodel-2.5.1\\res\\values\\values.xml",
@@ -112,7 +112,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\ap\\Documents\\Project\\flutter\\MBOAPHARMACIE\\build\\image_picker_android\\intermediates\\merged_res\\debug\\values\\values.xml",
+            "outputFile": "C:\\Users\\ap\\Documents\\Project\\flutter\\mboa-pharmacie\\build\\image_picker_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ap\\.gradle\\caches\\transforms-3\\4d89d69f3cfbc469a7cc750a1f02f5bb\\transformed\\lifecycle-viewmodel-2.5.1\\res\\values\\values.xml",

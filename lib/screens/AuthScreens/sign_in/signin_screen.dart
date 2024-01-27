@@ -1,28 +1,28 @@
-import 'package:mboa_pharmacie/resources/local_storage_key.dart';
-import 'package:mboa_pharmacie/resources/strings_manager.dart';
-import 'package:mboa_pharmacie/resources/style_manager.dart';
-import 'package:mboa_pharmacie/resources/value_manager.dart';
-import 'package:mboa_pharmacie/screens/AuthScreens/verifie_email.dart';
-import 'package:mboa_pharmacie/screens/Home/GetStarted/getStarted_screen.dart';
-import 'package:mboa_pharmacie/utils/is_loading_indicator.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:http/http.dart' as http;
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import '../../../Theme/app_theme.dart';
-import '../../../Theme/text_theme.dart';
+import '../verifie_email.dart';
 import '../../../models/Role.dart';
 import '../../../services/auth.dart';
-import '../../../services/internet_connection.dart';
-import '../../../services/localisationService/t_key.dart';
+import 'package:flutter/material.dart';
+import '../../../Theme/app_theme.dart';
+import '../sign_up/signup_screen.dart';
+import 'package:http/http.dart' as http;
+import 'package:provider/provider.dart';
+import '../../../Theme/text_theme.dart';
 import '../../../provider/provider.dart';
+import '../../../widget/widget_icon.dart';
+import '../../../widget/widget_button.dart';
 import '../../../utils/navigate_screen.dart';
 import '../../../widget/widget_alertbox.dart';
-import '../../../widget/widget_button.dart';
-import '../../../widget/widget_icon.dart';
 import '../../../widget/widget_textformfield.dart';
-import '../sign_up/signup_screen.dart';
-import '../verifie_email.dart';
+import '../../../services/internet_connection.dart';
+import '../../../services/localisationService/t_key.dart';
+import 'package:mboa_pharmacie/resources/style_manager.dart';
+import 'package:mboa_pharmacie/resources/value_manager.dart';
+import 'package:mboa_pharmacie/resources/strings_manager.dart';
+import 'package:mboa_pharmacie/utils/is_loading_indicator.dart';
+import 'package:mboa_pharmacie/resources/local_storage_key.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:mboa_pharmacie/screens/AuthScreens/verifie_email.dart';
+import 'package:mboa_pharmacie/screens/Home/GetStarted/getStarted_screen.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -200,7 +200,7 @@ class _SignInState extends State<SignIn> {
                           WidgetButton.largeButton(
                               TKeys.sign_in.translate(context),
                               AppTextTheme.buttonwhite,
-                              AppColors.primaryblue,
+                              AppColors.primary,
                               null, () async {
                             loginVerification();
                           }),

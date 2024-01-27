@@ -1,16 +1,15 @@
-import 'package:mboa_pharmacie/screens/AllEquipementCategories/components/add_form_equipement_category.dart';
-import 'package:mboa_pharmacie/utils/navigate_screen.dart';
-import 'package:flutter/material.dart';
-
-import '../../Theme/theme_export.dart';
-import '../../bloc/EquipementCategoriesBloc/equipement_categories_bloc.dart';
-import '../../bloc/EquipementCategoriesBloc/equipement_categories_state.dart';
 import '../../bloc/bloc_export.dart';
+import 'package:flutter/material.dart';
+import '../../Theme/theme_export.dart';
+import 'package:flutter/material.dart';
+import '../../widget/widget_button.dart';
 import '../../models/EquipementCategories.dart';
 import '../../services/localisationService/t_key.dart';
-import '../../widget/widget_button.dart';
 import 'components/all_equipement_categoriesList.dart';
-import 'package:flutter/material.dart';
+import 'package:mboa_pharmacie/utils/navigate_screen.dart';
+import '../../bloc/EquipementCategoriesBloc/equipement_categories_bloc.dart';
+import '../../bloc/EquipementCategoriesBloc/equipement_categories_state.dart';
+import 'package:mboa_pharmacie/screens/AllEquipementCategories/components/add_form_equipement_category.dart';
 
 class AllEquipementCategoryScreen extends StatefulWidget {
   const AllEquipementCategoryScreen({Key? key}) : super(key: key);
@@ -62,7 +61,7 @@ class _AllEquipementCategoryScreenState
                 WidgetButton.largeButton(
                     "Ajoutez une Categorie d'equipement",
                     AppTextTheme.buttonwhite,
-                    AppColors.primaryblue,
+                    AppColors.primary,
                     null, () async {
                   NavigationScreen.navigate(
                       context, AddFormEquipementCategory());

@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import '../Theme/app_theme.dart';
+import 'package:flutter/material.dart';
 
 class WidgetTextForm {
   static TextFormField getTextField(
@@ -14,7 +14,7 @@ class WidgetTextForm {
         obscureText: keytype == TextInputType.visiblePassword ? true : false,
         // obscureText: true,
         decoration: InputDecoration(
-          fillColor: AppColors.primaryblue,
+          fillColor: AppColors.primary,
           contentPadding:
               const EdgeInsets.symmetric(vertical: 12.0, horizontal: 5.0),
           prefixIcon: icon,
@@ -44,13 +44,12 @@ class WidgetTextForm {
       String? errorText,
       Widget? icon) {
     return TextField(
-       keyboardType: keytype,
-        obscureText: keytype == TextInputType.visiblePassword ? true : false,
+      keyboardType: keytype,
+      obscureText: keytype == TextInputType.visiblePassword ? true : false,
       decoration: InputDecoration(
         labelText: text,
       ),
-      onChanged: (value) {
-      },
+      onChanged: (value) {},
       controller: controller,
     );
   }

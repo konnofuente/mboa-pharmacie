@@ -56,7 +56,7 @@ dependencies:
   flutter_secure_storage: ^8.0.0
   flutter_secure_storage_web: ^1.1.1
     # to handle SVGs for Android, iOS, and Web
-  flutter_svg: ^0.21.0+1
+  flutter_svg: ^2.0.9
   connectivity: ^3.0.6
   babstrap_settings_screen: ^0.1.5+1
   image_picker: ^0.8.7+1
@@ -99,6 +99,7 @@ flutter:
   assets:
     - assets/Icons/
     - assets/Images/
+    - assets/Images/onBoarding/
     - assets/pdf/chemistry.pdf
     - assets/pdf/geography.pdf
     - assets/pdf/ict.pdf

@@ -1,16 +1,15 @@
-import 'package:mboa_pharmacie/bloc/EquipementCategoriesBloc/equipement_categories_event.dart';
-import 'package:mboa_pharmacie/models/EquipementCategories.dart';
 import 'package:flutter/material.dart';
-
-import '../../../Theme/theme_export.dart';
-import '../../../bloc/EquipementItemBloc/equipement_Item_event.dart';
-import '../../../bloc/EquipementItemBloc/equipement_item_bloc.dart';
 import '../../../bloc/bloc_export.dart';
+import '../../../Theme/theme_export.dart';
+import '../../../widget/widget_icon.dart';
+import '../../../widget/widget_button.dart';
 import '../../../models/EquipementItem.dart';
 import '../../../widget/widget_alertbox.dart';
-import '../../../widget/widget_button.dart';
-import '../../../widget/widget_icon.dart';
 import '../../../widget/widget_textformfield.dart';
+import 'package:mboa_pharmacie/models/EquipementCategories.dart';
+import '../../../bloc/EquipementItemBloc/equipement_item_bloc.dart';
+import '../../../bloc/EquipementItemBloc/equipement_Item_event.dart';
+import 'package:mboa_pharmacie/bloc/EquipementCategoriesBloc/equipement_categories_event.dart';
 
 class AddFormEquipementItem extends StatefulWidget {
   final EquipmentCategories equipmentCategory;
@@ -122,7 +121,7 @@ class _AddFormEquipementItemState extends State<AddFormEquipementItem> {
                     return WidgetButton.largeButton(
                       "Submit",
                       AppTextTheme.buttonwhite,
-                      AppColors.primaryblue,
+                      AppColors.primary,
                       null,
                       () => saveEquipmentItem(context),
                     );

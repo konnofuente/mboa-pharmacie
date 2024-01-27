@@ -1,16 +1,16 @@
-import 'package:mboa_pharmacie/resources/assets_manager.dart';
+import 'package:get/get.dart';
+import 'OnBoardingScreen.dart';
+import '../../Theme/text_theme.dart';
+import '../../provider/provider.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:mboa_pharmacie/utils/navigate_screen.dart';
 import 'package:mboa_pharmacie/resources/route_manager.dart';
 import 'package:mboa_pharmacie/resources/style_manager.dart';
 import 'package:mboa_pharmacie/resources/value_manager.dart';
-import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
-import 'package:mboa_pharmacie/utils/navigate_screen.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:provider/provider.dart';
-import '../../Theme/text_theme.dart';
+import 'package:mboa_pharmacie/resources/assets_manager.dart';
 import '../../services/localisationService/localization_service.dart';
-import '../../provider/provider.dart';
-import 'OnBoardingScreen.dart';
+import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
 
 class ChoseLangaugeScreen extends StatefulWidget {
   const ChoseLangaugeScreen({Key? key}) : super(key: key);
@@ -74,7 +74,9 @@ class _ChoseLangaugeScreenState extends State<ChoseLangaugeScreen> {
                                     NavigationScreen.navigate(
                                         context, OnBoardingScreen());
                                   },
-                                  icon: Image.asset(ImageAssets.enFlag),
+                                  icon: Image.asset(
+                                    ImageAssets.enFlag,
+                                  ),
                                 )),
                           ),
                         ),
@@ -108,8 +110,9 @@ class _ChoseLangaugeScreenState extends State<ChoseLangaugeScreen> {
 
                             print(_inProgress);
 
-             NavigationScreen.navigate(
-                                        context, OnBoardingScreen());
+                            NavigationScreen.navigate(
+                                context, OnBoardingScreen());
+                            
                           },
                         ),
                       ],

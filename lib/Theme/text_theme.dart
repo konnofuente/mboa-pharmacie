@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
-
 import 'app_theme.dart';
-
+import 'package:flutter/material.dart';
 
 class AppTextTheme {
   AppTextTheme._();
@@ -30,18 +28,18 @@ class AppTextTheme {
     headline4: header,
     headline5: title,
     headline6: appbartitle,
-    subtitle1: gridlisttitle,   
+    subtitle1: gridlisttitle,
     subtitle2: listtitle,
     bodyText2: body2,
     bodyText1: body1,
     caption: caption,
     button: buttonwhite,
-    headline2:buttonblack,
+    headline2: buttonblack,
     overline: link,
-    
   );
 
-  static const TextStyle bigtitle = TextStyle( //h3->bigtitle
+  static const TextStyle bigtitle = TextStyle(
+    //h3->bigtitle
     // h4 -> headline4
     fontFamily: fontName,
     fontWeight: bold,
@@ -50,19 +48,20 @@ class AppTextTheme {
     height: 0.9,
     color: darkerText,
   );
-  
 
-  static const TextStyle header = TextStyle( //h4
+  static const TextStyle header = TextStyle(
+    //h4
     // h4 -> headline4
     fontFamily: fontName,
-    fontWeight:bold,
+    fontWeight: bold,
     fontSize: 30,
     letterSpacing: 0.25,
     height: 0.9,
     color: darkerText,
   );
 
-  static const TextStyle title = TextStyle( //h5
+  static const TextStyle title = TextStyle(
+    //h5
     // h5 -> headline
     fontFamily: fontName,
     fontWeight: bold,
@@ -71,7 +70,8 @@ class AppTextTheme {
     color: darkerText,
   );
 
-  static const TextStyle appbartitle = TextStyle( //h6-
+  static const TextStyle appbartitle = TextStyle(
+    //h6-
     // h5 -> headline
     fontFamily: fontName,
     fontWeight: medium,
@@ -80,8 +80,8 @@ class AppTextTheme {
     color: AppColors.white,
   );
 
-
-  static const TextStyle gridlisttitle = TextStyle( //subtitle1
+  static const TextStyle gridlisttitle = TextStyle(
+    //subtitle1
     // subtitle2 -> subtitle
     fontFamily: fontName,
     fontWeight: bold,
@@ -117,14 +117,12 @@ class AppTextTheme {
   );
 
   static const TextStyle link = TextStyle(
-    // body1 -> body2
-    fontFamily: fontName,
-    fontWeight: FontWeight.w400,
-    fontSize: 14,
-    letterSpacing: 0.2,
-    color: AppColors.primaryblue
-  );
-
+      // body1 -> body2
+      fontFamily: fontName,
+      fontWeight: FontWeight.w400,
+      fontSize: 14,
+      letterSpacing: 0.2,
+      color: AppColors.primary);
 
   static const TextStyle buttonwhite = TextStyle(
     // h6 -> title
@@ -142,7 +140,6 @@ class AppTextTheme {
     letterSpacing: 1.25,
     color: AppColors.black,
   );
-
 
   static const TextStyle caption = TextStyle(
     // Caption -> caption

@@ -1,13 +1,12 @@
-import 'package:flutter/material.dart';
-import 'package:intl_phone_field/intl_phone_field.dart';
-
+import 'otp_verification.dart';
 import '../../Theme/app_theme.dart';
 import '../../Theme/text_theme.dart';
-import '../../utils/navigate_screen.dart';
-import '../../widget/widget_button.dart';
+import 'package:flutter/material.dart';
 import '../../widget/widget_icon.dart';
+import '../../widget/widget_button.dart';
+import '../../utils/navigate_screen.dart';
 import '../../widget/widget_textformfield.dart';
-import 'otp_verification.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
 
 class ConfirmEmail extends StatefulWidget {
   const ConfirmEmail({Key? key}) : super(key: key);
@@ -118,11 +117,8 @@ class _ConfirmEmailState extends State<ConfirmEmail> {
                     //     }),
 
                     const SizedBox(height: 40),
-                    WidgetButton.largeButton(
-                        'Confirm',
-                        AppTextTheme.buttonwhite,
-                        AppColors.primaryblue,
-                        null, () {
+                    WidgetButton.largeButton('Confirm',
+                        AppTextTheme.buttonwhite, AppColors.primary, null, () {
                       NavigationScreen.navigate(
                           context, const OTPVerification());
                     }),

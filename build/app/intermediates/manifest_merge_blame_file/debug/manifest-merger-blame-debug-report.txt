@@ -12,35 +12,35 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:4:5-67
-14-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:4:22-64
+14-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:4:5-67
+14-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:4:22-64
 15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-15-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:5:5-79
-15-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:5:22-76
+15-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:5:5-79
+15-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:5:22-76
 16    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-16-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:6:5-89
-16-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:6:22-86
+16-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:6:5-89
+16-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:6:22-86
 17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-17-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:7:5-81
-17-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:7:22-78
+17-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:7:5-81
+17-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:7:22-78
 18    <uses-permission android:name="com.example.towntour.permission.MAPS_RECEIVE" />
-18-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:8:5-84
-18-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:8:22-81
+18-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:8:5-84
+18-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:8:22-81
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:9:5-79
-19-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:9:22-76
+19-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:9:5-79
+19-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:9:22-76
 20    <uses-permission android:name="android.permission.CALL_PHONE" />
-20-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:10:5-69
-20-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:10:22-66
+20-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:10:5-69
+20-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:10:22-66
 21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-21-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:11:5-75
-21-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:11:22-72
+21-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:11:5-75
+21-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:11:22-72
 22    <uses-permission android:name="android.permission.WAKE_LOCK" />
-22-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:12:7-70
-22-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:12:24-67
+22-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:12:7-70
+22-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:12:24-67
 23    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-23-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:13:5-98
-23-->C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\android\app\src\main\AndroidManifest.xml:13:22-95
+23-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:13:5-98
+23-->C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\android\app\src\main\AndroidManifest.xml:13:22-95
 24
 25    <permission
 25-->[androidx.core:core:1.9.0] C:\Users\ap\.gradle\caches\transforms-3\3ef7a077a42c484f3ade3ba7c31265cb\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
@@ -95,48 +95,48 @@
 69            android:value="2" />
 70
 71        <provider
-71-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+71-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 72            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-72-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
+72-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
 73            android:authorities="com.example.mboa_pharmacie.flutter.image_provider"
-73-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
+73-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
 74            android:exported="false"
-74-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+74-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 75            android:grantUriPermissions="true" >
-75-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+75-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
 76            <meta-data
-76-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
+76-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
 77                android:name="android.support.FILE_PROVIDER_PATHS"
-77-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+77-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
 78                android:resource="@xml/flutter_image_picker_file_paths" />
-78-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
+78-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
 79        </provider>
 80
 81        <activity
-81-->[:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+81-->[:url_launcher_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
 82            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-82-->[:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+82-->[:url_launcher_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
 83            android:exported="false"
-83-->[:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+83-->[:url_launcher_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
 84            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-84-->[:url_launcher_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+84-->[:url_launcher_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 85
 86        <provider
-86-->[:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+86-->[:share] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 87            android:name="io.flutter.plugins.share.ShareFileProvider"
-87-->[:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-70
+87-->[:share] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-70
 88            android:authorities="com.example.mboa_pharmacie.flutter.share_provider"
-88-->[:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
+88-->[:share] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
 89            android:exported="false"
-89-->[:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+89-->[:share] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 90            android:grantUriPermissions="true" >
-90-->[:share] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+90-->[:share] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
 91            <meta-data
-91-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
+91-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
 92                android:name="android.support.FILE_PROVIDER_PATHS"
-92-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+92-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
 93                android:resource="@xml/flutter_share_file_paths" />
-93-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\MBOAPHARMACIE\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
+93-->[:image_picker_android] C:\Users\ap\Documents\Project\flutter\mboa-pharmacie\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
 94        </provider>
 95
 96        <uses-library

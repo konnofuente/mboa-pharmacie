@@ -1,22 +1,21 @@
 import 'dart:io';
-
-import 'package:mboa_pharmacie/bloc/EquipementCategoriesBloc/equipement_categories_event.dart';
-import 'package:mboa_pharmacie/models/EquipementCategories.dart';
-import 'package:mboa_pharmacie/widget/widget_alertbox.dart';
+import '../../../models/Role.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import '../../../Theme/app_theme.dart';
+import 'package:provider/provider.dart';
 import '../../../Theme/text_theme.dart';
 import '../../../bloc/bloc_export.dart';
-import '../../../models/Role.dart';
+import '../../../provider/provider.dart';
+import '../../../widget/widget_icon.dart';
+import '../../../widget/widget_button.dart';
+import 'package:image_picker/image_picker.dart';
+import '../../../widget/widget_textformfield.dart';
 import '../../../services/internet_connection.dart';
 import '../../../services/localisationService/t_key.dart';
-import '../../../provider/provider.dart';
+import 'package:mboa_pharmacie/widget/widget_alertbox.dart';
 import '../../../widget/imagePicker/image_oval_picker.dart';
-import '../../../widget/widget_button.dart';
-import '../../../widget/widget_icon.dart';
-import '../../../widget/widget_textformfield.dart';
-import 'package:image_picker/image_picker.dart';
+import 'package:mboa_pharmacie/models/EquipementCategories.dart';
+import 'package:mboa_pharmacie/bloc/EquipementCategoriesBloc/equipement_categories_event.dart';
 
 class AddFormEquipementCategory extends StatefulWidget {
   const AddFormEquipementCategory({Key? key}) : super(key: key);
@@ -208,11 +207,8 @@ class _AddFormEquipementCategoryState extends State<AddFormEquipementCategory> {
                 height: 15,
               ),
 
-              WidgetButton.largeButton(
-                  TKeys.create_cat.translate(context),
-                  AppTextTheme.buttonwhite,
-                  AppColors.primaryblue,
-                  null, () async {
+              WidgetButton.largeButton(TKeys.create_cat.translate(context),
+                  AppTextTheme.buttonwhite, AppColors.primary, null, () async {
                 SaveEquipementCategory(context);
               }),
             ],

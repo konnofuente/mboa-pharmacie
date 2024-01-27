@@ -1,10 +1,9 @@
-import 'package:mboa_pharmacie/screens/Home/GetStarted/getStarted_screen.dart';
 import 'package:flutter/material.dart';
-
 import '../../../Theme/app_theme.dart';
 import '../../../Theme/text_theme.dart';
-import '../../../utils/navigate_screen.dart';
 import '../../../widget/widget_button.dart';
+import '../../../utils/navigate_screen.dart';
+import 'package:mboa_pharmacie/screens/Home/GetStarted/getStarted_screen.dart';
 
 class CodeVerification extends StatefulWidget {
   const CodeVerification({Key? key}) : super(key: key);
@@ -83,11 +82,8 @@ class _CodeVerificationState extends State<CodeVerification> {
                           setState(() => pwd = val);
                         }),
                     const SizedBox(height: 40),
-                    WidgetButton.largeButton(
-                        'Confirm',
-                        AppTextTheme.buttonwhite,
-                        AppColors.primaryblue,
-                        null, () {
+                    WidgetButton.largeButton('Confirm',
+                        AppTextTheme.buttonwhite, AppColors.primary, null, () {
                       if (_formKey.currentState!.validate()) {
                         NavigationScreen.replaceNavigate(
                             context, GetStartedScreen());

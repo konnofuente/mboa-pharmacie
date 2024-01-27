@@ -1,9 +1,9 @@
-import 'package:mboa_pharmacie/screens/AuthScreens/reset_password.dart';
-import 'package:flutter/material.dart';
 import '../../Theme/app_theme.dart';
 import '../../Theme/text_theme.dart';
-import '../../utils/navigate_screen.dart';
+import 'package:flutter/material.dart';
 import '../../widget/widget_button.dart';
+import '../../utils/navigate_screen.dart';
+import 'package:mboa_pharmacie/screens/AuthScreens/reset_password.dart';
 
 class OTPVerification extends StatefulWidget {
   const OTPVerification({Key? key}) : super(key: key);
@@ -80,11 +80,8 @@ class _OTPVerificationState extends State<OTPVerification> {
                           setState(() => pwd = val);
                         }),
                     SizedBox(height: 40),
-                    WidgetButton.largeButton(
-                        'Confirm',
-                        AppTextTheme.buttonwhite,
-                        AppColors.primaryblue,
-                        null, () {
+                    WidgetButton.largeButton('Confirm',
+                        AppTextTheme.buttonwhite, AppColors.primary, null, () {
                       NavigationScreen.navigate(context, ResetPassword());
                     }),
                     Row(

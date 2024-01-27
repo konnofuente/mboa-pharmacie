@@ -221,10 +221,10 @@ packages:
     dependency: transitive
     description:
       name: dbus
-      sha256: "4f814fc7e73057f78f307a6c4714fe2ffb4bdb994ab1970540a068ec4d5a45be"
+      sha256: "253bfaa3d340778d8bc755e89c3af38e85ef95e65fd5d5670aa3167f8d4f6577"
       url: "https://pub.dev"
     source: hosted
-    version: "0.7.3"
+    version: "0.7.4"
   dots_indicator:
     dependency: transitive
     description:
@@ -237,10 +237,10 @@ packages:
     dependency: "direct main"
     description:
       name: dotted_border
-      sha256: "30721510498c55f129b5318347e1226065403224e41d1b93fb6b4e816e88f44f"
+      sha256: "108837e11848ca776c53b30bc870086f84b62ed6e01c503ed976e8f8c7df9c04"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.0+1"
+    version: "2.1.0"
   equatable:
     dependency: "direct main"
     description:
@@ -391,10 +391,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_svg
-      sha256: "4d557c7923add388b674af1691498e13df66b1997dd0c5234f062dfe7585f544"
+      sha256: d39e7f95621fc84376bc0f7d504f05c3a41488c562f4a8ad410569127507402c
       url: "https://pub.dev"
     source: hosted
-    version: "0.21.0+1"
+    version: "2.0.9"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -465,10 +465,10 @@ packages:
     dependency: transitive
     description:
       name: image
-      sha256: "02bafd3b4f399bfeb10034deba9753d93b55ce41cd0c4d3d8b355626f80e5b32"
+      sha256: "8e9d133755c3e84c73288363e6343157c383a0c6c56fc51afcc5d4d7180306d6"
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.3"
+    version: "3.3.0"
   image_picker:
     dependency: "direct main"
     description:
@@ -641,18 +641,18 @@ packages:
     dependency: transitive
     description:
       name: path_drawing
-      sha256: "3bdd251dae9ffaef944450b73f168610db7e968e7b20daf0c3907f8b4aafc8a2"
+      sha256: bbb1934c0cbb03091af082a6389ca2080345291ef07a5fa6d6e078ba8682f977
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.1+1"
+    version: "1.0.1"
   path_parsing:
     dependency: transitive
     description:
       name: path_parsing
-      sha256: ee5c47c1058ad66b4a41746ec3996af9593d0858872807bcd64ac118f0700337
+      sha256: e3e67b1629e6f7e8100b367d3db6ba6af4b1f0bb80f64db18ef1fbabd2fa9ccf
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.1"
+    version: "1.0.1"
   path_provider:
     dependency: "direct main"
     description:
@@ -713,10 +713,10 @@ packages:
     dependency: transitive
     description:
       name: petitparser
-      sha256: "1a914995d4ef10c94ff183528c120d35ed43b5eaa8713fc6766a9be4570782e2"
+      sha256: c15605cd28af66339f8eb6fbe0e541bfe2d1b72d5825efc6598f3e0a31b9ad27
       url: "https://pub.dev"
     source: hosted
-    version: "4.4.0"
+    version: "6.0.2"
   platform:
     dependency: transitive
     description:
@@ -914,6 +914,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.6"
+  vector_graphics:
+    dependency: transitive
+    description:
+      name: vector_graphics
+      sha256: "18f6690295af52d081f6808f2f7c69f0eed6d7e23a71539d75f4aeb8f0062172"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.9+2"
+  vector_graphics_codec:
+    dependency: transitive
+    description:
+      name: vector_graphics_codec
+      sha256: "531d20465c10dfac7f5cd90b60bbe4dd9921f1ec4ca54c83ebb176dbacb7bb2d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.9+2"
+  vector_graphics_compiler:
+    dependency: transitive
+    description:
+      name: vector_graphics_compiler
+      sha256: "03012b0a33775c5530576b70240308080e1d5050f0faf000118c20e6463bc0ad"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.9+2"
   vector_math:
     dependency: transitive
     description:
@@ -990,10 +1014,10 @@ packages:
     dependency: transitive
     description:
       name: xml
-      sha256: baa23bcba1ba4ce4b22c0c7a1d9c861e7015cb5169512676da0b85138e72840c
+      sha256: b015a8ad1c488f66851d762d3090a21c600e479dc75e68328c52774040cf9226
       url: "https://pub.dev"
     source: hosted
-    version: "5.3.1"
+    version: "6.5.0"
   yaml:
     dependency: transitive
     description:
@@ -1003,5 +1027,5 @@ packages:
     source: hosted
     version: "3.1.1"
 sdks:
-  dart: ">=3.2.0-194.0.dev <4.0.0"
-  flutter: ">=3.0.0"
+  dart: ">=3.2.0 <4.0.0"
+  flutter: ">=3.7.0-0"

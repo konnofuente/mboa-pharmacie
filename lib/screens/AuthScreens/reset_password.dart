@@ -1,11 +1,10 @@
-import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/signin_screen.dart';
-import 'package:flutter/material.dart';
-
 import '../../Theme/app_theme.dart';
 import '../../Theme/text_theme.dart';
-import '../../utils/navigate_screen.dart';
-import '../../widget/widget_button.dart';
+import 'package:flutter/material.dart';
 import '../../widget/widget_icon.dart';
+import '../../widget/widget_button.dart';
+import '../../utils/navigate_screen.dart';
+import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/signin_screen.dart';
 
 class ResetPassword extends StatefulWidget {
   const ResetPassword({Key? key}) : super(key: key);
@@ -69,7 +68,7 @@ class _ResetPasswordState extends State<ResetPassword> {
                     SizedBox(height: 20),
                     SizedBox(height: 40),
                     WidgetButton.largeButton('Reset', AppTextTheme.buttonwhite,
-                        AppColors.primaryblue, null, () {
+                        AppColors.primary, null, () {
                       NavigationScreen.navigate(context, SignIn());
                     }),
                   ],

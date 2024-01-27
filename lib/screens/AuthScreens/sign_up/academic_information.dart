@@ -1,26 +1,24 @@
-// ignore_for_file: use_build_context_synchronously
-
 import 'dart:convert';
-
-import 'package:mboa_pharmacie/models/Role.dart';
-import 'package:mboa_pharmacie/provider/provider.dart';
+import 'code_verification.dart';
+import '../../../models/User.dart';
+import '../../../size_config.dart';
+import '../../../services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
-import 'package:intl_phone_field/intl_phone_field.dart';
+import '../../../Theme/app_theme.dart';
+import '../sign_in/signin_screen.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
-import '../../../Theme/app_theme.dart';
 import '../../../Theme/text_theme.dart';
-import '../../../models/User.dart';
-import '../../../services/auth.dart';
-import '../../../size_config.dart';
+import '../../../widget/widget_icon.dart';
+import '../../../widget/widget_button.dart';
 import '../../../utils/navigate_screen.dart';
 import '../../../widget/widget_alertbox.dart';
-import '../../../widget/widget_button.dart';
-import '../../../widget/widget_icon.dart';
+import 'package:mboa_pharmacie/models/Role.dart';
 import '../../../widget/widget_textformfield.dart';
-import '../sign_in/signin_screen.dart';
-import 'code_verification.dart';
+import 'package:mboa_pharmacie/provider/provider.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
+// ignore_for_file: use_build_context_synchronously
 
 class AcademicInformation extends StatefulWidget {
   const AcademicInformation({Key? key}) : super(key: key);
@@ -267,7 +265,7 @@ class _AcademicInformationState extends State<AcademicInformation> {
                       WidgetButton.largeButton(
                           'Register',
                           AppTextTheme.buttonwhite,
-                          AppColors.primaryblue,
+                          AppColors.primary,
                           null, () async {
                         if (_formKey.currentState!.validate()) {
                           User halfUser =

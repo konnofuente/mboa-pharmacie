@@ -1,24 +1,24 @@
-// ignore_for_file: use_build_context_synchronously
-import 'package:mboa_pharmacie/models/Role.dart';
-import 'package:mboa_pharmacie/screens/AuthScreens/sign_up/academic_information.dart';
-import 'package:mboa_pharmacie/provider/provider.dart';
-import 'package:flutter/material.dart';
-import 'package:intl_phone_field/intl_phone_field.dart';
-import 'package:provider/provider.dart';
-import '../../../Theme/app_theme.dart';
-import '../../../Theme/text_theme.dart';
-import '../../../bloc/UserBloc/User_state.dart';
-import '../../../bloc/UserBloc/user_state.dart';
-import '../../../bloc/bloc_export.dart';
+import 'code_verification.dart';
 import '../../../models/User.dart';
 import '../../../services/auth.dart';
-import '../../../services/localisationService/t_key.dart';
-import '../../../utils/navigate_screen.dart';
-import '../../../widget/widget_button.dart';
-import '../../../widget/widget_icon.dart';
-import '../../../widget/widget_textformfield.dart';
-import 'code_verification.dart';
+import 'package:flutter/material.dart';
+import '../../../Theme/app_theme.dart';
 import '../sign_in/signin_screen.dart';
+import 'package:provider/provider.dart';
+import '../../../Theme/text_theme.dart';
+import '../../../bloc/bloc_export.dart';
+import '../../../widget/widget_icon.dart';
+import '../../../widget/widget_button.dart';
+import '../../../utils/navigate_screen.dart';
+import '../../../bloc/UserBloc/User_state.dart';
+import '../../../bloc/UserBloc/user_state.dart';
+import 'package:mboa_pharmacie/models/Role.dart';
+import '../../../widget/widget_textformfield.dart';
+import 'package:mboa_pharmacie/provider/provider.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
+import '../../../services/localisationService/t_key.dart';
+import 'package:mboa_pharmacie/screens/AuthScreens/sign_up/academic_information.dart';
+// ignore_for_file: use_build_context_synchronously
 
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
@@ -49,7 +49,7 @@ class _SignUpState extends State<SignUp> {
       TextStyle textStyle, Color backgroundColor, Widget? logo) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-          onSurface: AppColors.primaryblue,
+          onSurface: AppColors.primary,
           primary: backgroundColor,
           fixedSize: const Size(350, 50)),
       child: Row(
@@ -158,7 +158,7 @@ class _SignUpState extends State<SignUp> {
                         WidgetIcon.passwordKey(false)),
                     SizedBox(height: 20),
                     WidgetButton.largeButton('Next', AppTextTheme.buttonwhite,
-                        AppColors.primaryblue, null, () {
+                        AppColors.primary, null, () {
                       if (_formKey.currentState!.validate()) {
                         AuthService.localregisterUser(
                           context: context,

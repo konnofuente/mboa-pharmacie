@@ -1,10 +1,9 @@
+import 'package:flutter/material.dart';
+import '../../../../Theme/theme_export.dart';
+import '../../../../widget/widget_export.dart';
 import 'package:mboa_pharmacie/screens/Home/home.dart';
 import 'package:mboa_pharmacie/utils/utils_export.dart';
-import 'package:flutter/material.dart';
-
-import '../../../../Theme/theme_export.dart';
 import '../../../../services/localisationService/t_key.dart';
-import '../../../../widget/widget_export.dart';
 
 class GetStartedBody extends StatelessWidget {
   const GetStartedBody({
@@ -51,7 +50,7 @@ class GetStartedBody extends StatelessWidget {
               height: 90.0,
             ),
             WidgetButton.largeButton(TKeys.get_srt.translate(context),
-                AppTextTheme.buttonwhite, AppColors.primaryblue, null, () {
+                AppTextTheme.buttonwhite, AppColors.primary, null, () {
               NavigationScreen.replaceNavigate(context, Home());
             })
           ],
