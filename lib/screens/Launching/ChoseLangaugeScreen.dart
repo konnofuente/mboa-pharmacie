@@ -94,8 +94,8 @@ class _ChoseLangaugeScreenState extends State<ChoseLangaugeScreen> {
 
                                       print(_inProgress);
 
-                                      Navigator.pushNamed(
-                                          context, Routes.onBoardingRoute);
+                                      NavigationScreen.navigate(
+                                          context, OnBoardingScreen());
                                     },
                                     icon: Image.asset(ImageAssets.frFlag),
                                     label: Text(
@@ -104,16 +104,9 @@ class _ChoseLangaugeScreenState extends State<ChoseLangaugeScreen> {
                                     ),
                                   )),
                             ),
-                          ),
-                          onTap: () async {
-                            await localizationController.toggleLanguage('fr');
-
-                            print(_inProgress);
-
-                            NavigationScreen.navigate(
-                                context, OnBoardingScreen());
-                            
-                          },
+                          )
+                          ,
+                   
                         ),
                       ],
                     ),
