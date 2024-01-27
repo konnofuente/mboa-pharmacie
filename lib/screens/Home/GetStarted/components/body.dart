@@ -4,6 +4,7 @@ import '../../../../widget/widget_export.dart';
 import 'package:mboa_pharmacie/screens/Home/home.dart';
 import 'package:mboa_pharmacie/utils/utils_export.dart';
 import '../../../../services/localisationService/t_key.dart';
+import 'package:mboa_pharmacie/resources/assets_manager.dart';
 
 class GetStartedBody extends StatelessWidget {
   const GetStartedBody({
@@ -20,10 +21,7 @@ class GetStartedBody extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'assets/Images/hospital.png',
-              height: 200,
-            ),
+            ImageFormatter.buildImageSvg(ImageAssets.welcomeLogo,300),
             SizedBox(
               height: 60.0,
             ),

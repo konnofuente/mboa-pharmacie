@@ -36,7 +36,10 @@ class SignInFooter extends StatelessWidget {
             WidgetButton.textButton(
                 TKeys.did_not_have_acct.translate(context),
                 AppTextTheme.body2,
-                () {}),
+                () {
+                    NavigationScreen.replaceNavigate(
+              context, const SignUp());
+                }),
             role == Role.ADMIN
                 ? WidgetButton.textButton(
                     TKeys.sign_up.translate(context),

@@ -3,6 +3,9 @@ import '../../../Theme/app_theme.dart';
 import '../../../Theme/text_theme.dart';
 import '../../../widget/widget_button.dart';
 import '../../../utils/navigate_screen.dart';
+import 'package:mboa_pharmacie/resources/value_manager.dart';
+import 'package:mboa_pharmacie/screens/AuthScreens/widget/export.dart';
+import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
 import 'package:mboa_pharmacie/screens/Home/GetStarted/getStarted_screen.dart';
 
 class CodeVerification extends StatefulWidget {
@@ -22,7 +25,7 @@ class _CodeVerificationState extends State<CodeVerification> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 40.0),
+          padding: const EdgeInsets.symmetric(horizontal: AppSize.s40),
           height: MediaQuery.of(context).size.height,
           width: double.infinity,
           child: Column(
@@ -30,24 +33,16 @@ class _CodeVerificationState extends State<CodeVerification> {
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Row(
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  const Text(
-                    'Code Verification',
-                    style: AppTextTheme.bigtitle,
-                  ),
-                ],
-              ),
+             AuthPageTitle(title: TKeys.code_verif.translate(context)),
               const SizedBox(
                 height: 30.0,
               ),
               Row(
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
-                  const Flexible(
+                  Flexible(
                       child: Text(
-                    "a verification code have been send to your email please confirm",
+                    TKeys.code_verif_subtitle.translate(context),
                     style: AppTextTheme.caption,
                   )),
                 ],
@@ -77,12 +72,12 @@ class _CodeVerificationState extends State<CodeVerification> {
                         ),
                         keyboardType: TextInputType.number,
                         validator: (val) =>
-                            val!.isEmpty ? 'code is required' : null,
+                            val!.isEmpty ? TKeys.req_code.translate(context) : null,
                         onChanged: (val) {
                           setState(() => pwd = val);
                         }),
                     const SizedBox(height: 40),
-                    WidgetButton.largeButton('Confirm',
+                    WidgetButton.largeButton(TKeys.confirm.translate(context),
                         AppTextTheme.buttonwhite, AppColors.primary, null, () {
                       if (_formKey.currentState!.validate()) {
                         NavigationScreen.replaceNavigate(
@@ -92,7 +87,7 @@ class _CodeVerificationState extends State<CodeVerification> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        WidgetButton.textButton('Did not recieve code ?',
+                        WidgetButton.textButton(TKeys.not_recieve_code.translate(context),
                             AppTextTheme.body2, () {}),
                         WidgetButton.textButton(
                             'resend', AppTextTheme.link, () {}),
@@ -108,26 +103,4 @@ class _CodeVerificationState extends State<CodeVerification> {
     );
   }
 
-  Future<void> showalertDialogue() async {
-    Widget okButton = ElevatedButton(
-      child: const Text("OK"),
-      onPressed: () {
-        Navigator.pop(context);
-      },
-    );
-
-    AlertDialog alert = AlertDialog(
-      title: const Text("LOGIN ERROR"),
-      content: const Text("Credential Enter are Invalid "),
-      actions: [
-        okButton,
-      ],
-    );
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return alert;
-      },
-    );
-  }
 }

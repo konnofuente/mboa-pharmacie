@@ -1,19 +1,14 @@
-import '../verifie_email.dart';
 import '../../../models/Role.dart';
 import '../../../services/auth.dart';
 import 'package:flutter/material.dart';
 import '../../../Theme/app_theme.dart';
-import '../sign_up/signup_screen.dart';
 import 'package:provider/provider.dart';
 import '../../../Theme/text_theme.dart';
 import '../../../provider/provider.dart';
-import '../../../widget/widget_icon.dart';
 import '../../../widget/widget_button.dart';
-import '../../../utils/navigate_screen.dart';
-import '../../../widget/widget_alertbox.dart';
-import '../../../widget/widget_textformfield.dart';
 import '../../../services/internet_connection.dart';
 import '../../../services/localisationService/t_key.dart';
+import 'package:mboa_pharmacie/utils/navigate_screen.dart';
 import 'package:mboa_pharmacie/resources/style_manager.dart';
 import 'package:mboa_pharmacie/resources/value_manager.dart';
 import 'package:mboa_pharmacie/resources/strings_manager.dart';
@@ -21,8 +16,11 @@ import 'package:mboa_pharmacie/utils/is_loading_indicator.dart';
 import 'package:mboa_pharmacie/resources/local_storage_key.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:mboa_pharmacie/screens/AuthScreens/widget/export.dart';
+import 'package:mboa_pharmacie/screens/Home/GetStarted/getStarted_screen.dart';
+import 'package:mboa_pharmacie/screens/AuthScreens/sign_up/code_verification.dart';
+import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/components/login_form.dart';
 import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/components/signin_footer.dart';
-import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/components/email_login_form.dart';
+
 
 
 class SignIn extends StatefulWidget {
@@ -76,7 +74,14 @@ class _SignInState extends State<SignIn> with TickerProviderStateMixin {
   }
 
   Future<void> loginVerification() async {
+    print('this is the email ${emailController.text}');
+    print('this is the email ${phoneNumberController.text}');
+
     if (_formKey.currentState!.validate()) {
+      NavigationScreen.navigate(
+            context, GetStartedScreen());
+
+
       AuthService authService = AuthService();
       await authService.localloginUser(
         context: context,
@@ -130,12 +135,12 @@ class _SignInState extends State<SignIn> with TickerProviderStateMixin {
                           TabBar(
                             controller: _tabController,
                             tabs: [
-                              Tab(text: 'Email Login'),
-                              Tab(text: 'Phone Login'),
+                              Tab(text: TKeys.email.translate(context)),
+                              Tab(text: TKeys.p_num.translate(context)),
                             ],
                           ),
                           Container(
-                            height: MediaQuery.of(context).size.height * 0.25,
+                            height: MediaQuery.of(context).size.height * 0.30,
                             width: double.infinity,
                             child: TabBarView(
                               controller: _tabController,
@@ -149,7 +154,7 @@ class _SignInState extends State<SignIn> with TickerProviderStateMixin {
                                   phoneNumberController: phoneNumberController,
                                   phoneNumberKeytype: phoneNumberKeytype,
                                   isEmailFieldVisible: true,
-                                   isPhoneNumberFieldVisible: false,
+                                  isPhoneNumberFieldVisible: false,
                                 ),
                                 LoginForm(
                                   formKey: _formKey,
@@ -160,9 +165,9 @@ class _SignInState extends State<SignIn> with TickerProviderStateMixin {
                                   phoneNumberController: phoneNumberController,
                                   phoneNumberKeytype: phoneNumberKeytype,
                                   isEmailFieldVisible: false,
-                                   isPhoneNumberFieldVisible: true,
+                                  isPhoneNumberFieldVisible: true,
                                 )
-                                              ],
+                              ],
                             ),
                           ),
                         ],

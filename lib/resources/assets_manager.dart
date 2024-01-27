@@ -13,6 +13,7 @@ class ImageAssets {
   static const String onboardingLogo1 = "$ONBOARDING_PATH/split-1.svg";
   static const String onboardingLogo2 = "$ONBOARDING_PATH/split-2.svg";
   static const String onboardingLogo3 = "$ONBOARDING_PATH/split-3.svg";
+  static const String welcomeLogo = "$ONBOARDING_PATH/welcome.svg";
 
   static const String admin = "$CHOSEUSER_PATH/admin.png";
   static const String patient = "$CHOSEUSER_PATH/patient.png";
