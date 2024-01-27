@@ -4,7 +4,6 @@ import '../../../services/auth.dart';
 import 'package:flutter/material.dart';
 import '../../../Theme/app_theme.dart';
 import '../sign_up/signup_screen.dart';
-import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import '../../../Theme/text_theme.dart';
 import '../../../provider/provider.dart';
@@ -21,8 +20,8 @@ import 'package:mboa_pharmacie/resources/strings_manager.dart';
 import 'package:mboa_pharmacie/utils/is_loading_indicator.dart';
 import 'package:mboa_pharmacie/resources/local_storage_key.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:mboa_pharmacie/screens/AuthScreens/verifie_email.dart';
-import 'package:mboa_pharmacie/screens/Home/GetStarted/getStarted_screen.dart';
+import 'package:mboa_pharmacie/screens/AuthScreens/widget/export.dart';
+import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/components/email_login_form.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -32,13 +31,16 @@ class SignIn extends StatefulWidget {
   _SignInState createState() => _SignInState();
 }
 
-class _SignInState extends State<SignIn> {
+class _SignInState extends State<SignIn> with TickerProviderStateMixin {
   final _formKey = GlobalKey<FormState>();
   late bool alert;
   late String email, pwd, token;
+  late TabController _tabController;
   TextEditingController emailController = TextEditingController();
   TextInputType emailKeytype = TextInputType.emailAddress;
   TextEditingController passwordController = TextEditingController();
+  TextInputType phoneNumberKeytype = TextInputType.phone;
+  TextEditingController phoneNumberController = TextEditingController();
   Icon icon = Icon(Icons.visibility);
   Icon hide_icon = Icon(Icons.visibility_off);
   bool isPasswordVisible = false;
@@ -55,9 +57,16 @@ class _SignInState extends State<SignIn> {
 
   @override
   void initState() {
+    super.initState();
+    _tabController = TabController(length: 2, vsync: this);
     _readCredentialFromStorage();
     checkconnection();
-    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
   }
 
   void checkconnection() async {
@@ -65,15 +74,8 @@ class _SignInState extends State<SignIn> {
   }
 
   Future<void> loginVerification() async {
-    // NavigationScreen.navigate(context, GetStartedScreen());
     if (_formKey.currentState!.validate()) {
-      // await AuthService()
-      //     .login(context, emailController.text, passwordController.text);
-
       AuthService authService = AuthService();
-
-      // your other code here...
-
       await authService.localloginUser(
         context: context,
         email: emailController.text,
@@ -99,114 +101,81 @@ class _SignInState extends State<SignIn> {
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Container(
-                      // ignore: prefer_const_literals_to_create_immutables
-                      child: Align(
-                        alignment: Alignment.center,
-                        child: Text(
-                          TKeys.sign_in.translate(context),
-                          textAlign: TextAlign.center,
-                          style: AppTextTheme.bigtitle,
-                        ),
-                      ),
+                    AuthPageTitle(
+                      title: TKeys.sign_in.translate(context),
                     ),
                     const SizedBox(
                       height: AppSize.s12,
                     ),
-                    Column(
-                        // ignore: prefer_const_literals_to_create_immutables
-                        children: [
-                          Container(
-                              // height: 20,
-                              child: Text(
-                            TKeys.welcome.translate(context),
-                            style: AppTextTheme.header,
-                          )),
-                          const SizedBox(
-                            height: 15.0,
-                          ),
-                          Container(
-                              alignment: Alignment.center,
-                              height: 20,
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  WidgetIcon.alert(true),
-                                  Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      " ${TKeys.auth_user_info.translate(context)} : ${role == Role.ADMIN ? Role.ADMIN.name : Role.RESPONSABLE.name}",
-                                      style: AppTextTheme.caption,
-                                    ),
-                                  ),
-                                ],
-                              )),
-                        ]),
-                    const SizedBox(
-                      height: 25.0,
-                    ),
-                    Form(
-                      key: _formKey,
-                      child: Column(
-                        children: [
-                          const SizedBox(height: 20),
-                          WidgetTextForm.getTextField(
-                              TKeys.email.translate(context),
-                              emailController,
-                              emailKeytype,
-                              TKeys.email.translate(context),
-                              WidgetIcon.userAccount(false)),
-                          const SizedBox(height: 20),
-                          const SizedBox(height: 20),
-                          TextFormField(
-                              controller: passwordController,
-                              decoration: InputDecoration(
-                                prefixIcon: const Icon(Icons.vpn_key,
-                                    color: Colors.blue),
-                                labelText: TKeys.pwd.translate(context),
-                                hintText: "",
-                                suffixIcon: IconButton(
-                                  onPressed: () {
-                                    setState(() {
-                                      isPasswordVisible = !isPasswordVisible;
-                                      print(!isPasswordVisible);
-                                    });
-                                  },
-                                  icon: isPasswordVisible ? icon : hide_icon,
-                                ),
-                                // ignore: prefer_const_constructors
-                                border: OutlineInputBorder(
-                                    borderRadius: const BorderRadius.all(
-                                      Radius.circular(10.0),
-                                    ),
-                                    borderSide:
-                                        const BorderSide(color: Colors.grey)),
-                                focusedBorder: const OutlineInputBorder(
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(10.0),
-                                    ),
-                                    borderSide: BorderSide(color: Colors.blue)),
-                              ),
-                              keyboardType: TextInputType.text,
-                              obscureText: isPasswordVisible,
-                              validator: (val) => val!.isEmpty
-                                  ? TKeys.pwd.translate(context)
-                                  : null,
-                              onChanged: (val) {
-                                setState(() => pwd = val);
-                              }),
-                          const SizedBox(height: 40),
-                          WidgetButton.largeButton(
-                              TKeys.sign_in.translate(context),
-                              AppTextTheme.buttonwhite,
-                              AppColors.primary,
-                              null, () async {
-                            loginVerification();
-                          }),
-                        ],
+                    Column(children: [
+                      Container(
+                          // height: 20,
+                          child: Text(
+                        TKeys.welcome.translate(context),
+                        style: AppTextTheme.header,
+                      )),
+                      const SizedBox(
+                        height: AppSize.s18,
                       ),
+                      AuthUserInfoWidget(role: role),
+                    ]),
+                    const SizedBox(
+                      height: AppSize.s28,
                     ),
+                    Column(
+                      children: [
+                        TabBar(
+                          controller: _tabController,
+                          tabs: [
+                            Tab(text: 'Email Login'),
+                            Tab(text: 'Phone Login'),
+                          ],
+                        ),
+                        Container(
+                          padding: getSymmetricPadding(
+                              AppPadding.p0, AppPadding.p40),
+                          height: 300,
+                          width: double.infinity,
+                          child: TabBarView(
+                            controller: _tabController,
+                            children: [
+                              LoginForm(
+                                formKey: _formKey,
+                                emailController: emailController,
+                                emailKeytype: emailKeytype,
+                                isPasswordVisible: isPasswordVisible,
+                                passwordController: passwordController,
+                                phoneNumberController: phoneNumberController,
+                                phoneNumberKeytype: phoneNumberKeytype,
+                                isEmailFieldVisible: true,
+                                 isPhoneNumberFieldVisible: false,
+                              ),
+                              LoginForm(
+                                formKey: _formKey,
+                                emailController: emailController,
+                                emailKeytype: emailKeytype,
+                                isPasswordVisible: isPasswordVisible,
+                                passwordController: passwordController,
+                                phoneNumberController: phoneNumberController,
+                                phoneNumberKeytype: phoneNumberKeytype,
+                                isEmailFieldVisible: false,
+                                 isPhoneNumberFieldVisible: true,
+                              )
+
+                              // _buildPhoneLogin(context),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 40),
+                    WidgetButton.largeButton(
+                        TKeys.sign_in.translate(context),
+                        AppTextTheme.buttonwhite,
+                        AppColors.primary,
+                        null, () async {
+                      loginVerification();
+                    }),
                     Column(
                       children: [
                         WidgetButton.textButton(TKeys.f_pwd.translate(context),

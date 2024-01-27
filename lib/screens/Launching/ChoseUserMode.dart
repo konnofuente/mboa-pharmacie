@@ -50,11 +50,9 @@ class ChoseUserMode extends StatelessWidget {
                             delay: Duration(milliseconds: 100),
                             child: InkWell(
                               onTap: () {
-                                // print(index);
                                 Provider.of<AppStatus>(context, listen: false)
                                     .setUserRole(index);
                                 NavigationScreen.navigate(context, SignIn());
-                                // print(Role.STUDENT.name);
                               },
                               child: listItem(_list[index], context),
                             ),

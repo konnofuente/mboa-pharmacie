@@ -8,6 +8,10 @@ class WidgetIcon {
     return Icon(Icons.person,
         color: onclick ? AppColors.primary : AppColors.icon);
   }
+  static Widget phone(bool onclick) {
+    return Icon(Icons.phone,
+        color: onclick ? AppColors.primary : AppColors.icon);
+  }
 
   static Widget email(bool onclick) {
     return Icon(Icons.email,
