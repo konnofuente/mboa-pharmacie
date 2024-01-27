@@ -10,6 +10,10 @@
   "splash_text_3": "We deliver your medications quickly. Couriers use protective equipment.",
   "skip": "Skip",
   "done": "Done",
+
+  "admin":"Admin",
+  "patients":"patients",
+  
   "teacher": "Teacher",
   "student": "Student",
   "sign_in": "Sign In",

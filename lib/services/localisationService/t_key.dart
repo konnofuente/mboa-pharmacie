@@ -1,6 +1,6 @@
+import 'localization_service.dart';
 // ignore_for_file: constant_identifier_names
 
-import 'localization_service.dart';
 
 enum TKeys {
   // ignore: constant_identifier_names
@@ -15,6 +15,9 @@ enum TKeys {
   splash_title_3,
   skip,
   done,
+  
+  admin,
+  patients,
   teacher,
   student,
   sign_in,

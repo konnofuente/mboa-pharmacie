@@ -1,16 +1,18 @@
-import 'package:mboa_pharmacie/Theme/app_theme.dart';
-import 'package:mboa_pharmacie/models/Role.dart';
-import 'package:mboa_pharmacie/resources/export_app_manager.dart';
-import 'package:mboa_pharmacie/resources/style_manager.dart';
-import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/signin_screen.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
-import 'package:provider/provider.dart';
-
 import '../../data.dart';
 import '../../models/GridInfo.dart';
 import '../../provider/provider.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../../utils/navigate_screen.dart';
+import 'package:mboa_pharmacie/models/Role.dart';
+import 'package:mboa_pharmacie/Theme/app_theme.dart';
+import 'package:mboa_pharmacie/resources/style_manager.dart';
+import 'package:mboa_pharmacie/resources/export_app_manager.dart';
+import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
+import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/signin_screen.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+
+
 
 class ChoseUserMode extends StatelessWidget {
   const ChoseUserMode({Key? key}) : super(key: key);
@@ -27,39 +29,45 @@ class ChoseUserMode extends StatelessWidget {
             SizedBox(
               height: AppSize.s12,
             ),
-            Expanded(
+          Expanded(
+            child: Center(
               child: Padding(
-                padding:
-                    getSymmetricPadding(AppPadding.p0, AppPadding.p70),
+                padding: getSymmetricPadding(AppPadding.p0, AppPadding.p70),
                 child: AnimationLimiter(
-                    child: GridView.builder(
-                        shrinkWrap: true,
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 1),
-                        itemCount: _list.length,
-                        itemBuilder: (BuildContext context, int index) {
-                          return AnimationConfiguration.staggeredGrid(
-                              columnCount: 1,
-                              position: index,
-                              duration: Duration(milliseconds: 1000),
-                              child: ScaleAnimation(
-                                  child: FadeInAnimation(
-                                      delay: Duration(milliseconds: 100),
-                                      child: InkWell(
-                                          onTap: () {
-                                            // print(index);
-                                            Provider.of<AppStatus>(context,
-                                                    listen: false)
-                                                .setUserRole(index);
-                                            NavigationScreen.navigate(
-                                                context, SignIn());
-                                            // print(Role.STUDENT.name);
-                                          },
-                                          child: listItem(
-                                              _list[index], context)))));
-                        })),
+                  child: GridView.builder(
+                    shrinkWrap: true,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 1,
+                    ),
+                    itemCount: _list.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      return AnimationConfiguration.staggeredGrid(
+                        columnCount: 1,
+                        position: index,
+                        duration: Duration(milliseconds: 1000),
+                        child: ScaleAnimation(
+                          child: FadeInAnimation(
+                            delay: Duration(milliseconds: 100),
+                            child: InkWell(
+                              onTap: () {
+                                // print(index);
+                                Provider.of<AppStatus>(context, listen: false)
+                                    .setUserRole(index);
+                                NavigationScreen.navigate(context, SignIn());
+                                // print(Role.STUDENT.name);
+                              },
+                              child: listItem(_list[index], context),
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
               ),
             ),
+          ),
+          
           ],
         ),
       ),
@@ -84,7 +92,7 @@ class ChoseUserMode extends StatelessWidget {
               height: 26,
             ),
             Text(
-              GridInfo.name == "Admin" ? "Admin" : "Responsable de laboratoire",
+              GridInfo.name == "Admin" ? TKeys.admin.translate(context) : TKeys.patients.translate(context),
               style: TextStyle(fontSize: 18),
             ),
             // SizedBox(height: 10,)

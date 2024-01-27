@@ -100,6 +100,7 @@ flutter:
     - assets/Icons/
     - assets/Images/
     - assets/Images/onBoarding/
+    - assets/Images/choseUser/
     - assets/pdf/chemistry.pdf
     - assets/pdf/geography.pdf
     - assets/pdf/ict.pdf
