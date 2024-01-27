@@ -1,9 +1,8 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:mboa_pharmacie/models/Role.dart';
-import 'package:flutter/material.dart';
-
-import '../models/EquipementCategories.dart';
 import '../models/User.dart';
+import 'package:flutter/material.dart';
+import 'package:mboa_pharmacie/models/Role.dart';
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+
 
 class UserCreation with ChangeNotifier {
   User? userCreation;
@@ -77,15 +76,4 @@ class AppStatus with ChangeNotifier {
   }
 }
 
-class EquipmentCategoriesState with ChangeNotifier {
-  EquipmentCategoriesState({
-    required this.equipment_categories,
-  });
 
-  EquipmentCategories? equipment_categories;
-
-  setGlobalEquipmentCategories(EquipmentCategories val) {
-    equipment_categories = val;
-    notifyListeners();
-  }
-}

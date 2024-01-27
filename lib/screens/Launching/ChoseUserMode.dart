@@ -4,7 +4,6 @@ import '../../provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../utils/navigate_screen.dart';
-import 'package:mboa_pharmacie/models/Role.dart';
 import 'package:mboa_pharmacie/Theme/app_theme.dart';
 import 'package:mboa_pharmacie/resources/style_manager.dart';
 import 'package:mboa_pharmacie/resources/export_app_manager.dart';
@@ -20,7 +19,6 @@ class ChoseUserMode extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<GridInfo> _list = FakeData().userList;
-    Role? role = Provider.of<AppStatus>(context).role;
 
     return Scaffold(
       body: Container(

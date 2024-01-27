@@ -1,9 +1,7 @@
 import 'package:get/get.dart';
 import 'OnBoardingScreen.dart';
 import '../../Theme/text_theme.dart';
-import '../../provider/provider.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:mboa_pharmacie/utils/navigate_screen.dart';
 import 'package:mboa_pharmacie/resources/route_manager.dart';
 import 'package:mboa_pharmacie/resources/style_manager.dart';
@@ -25,7 +23,6 @@ class _ChoseLangaugeScreenState extends State<ChoseLangaugeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    String LangCode = Provider.of<AppLang>(context).appLang;
     return SafeArea(
       child: Scaffold(
         body: Container(

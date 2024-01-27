@@ -1,14 +1,11 @@
 import 'dart:async';
-import 'dart:convert';
 import 'package:get/get.dart';
-import 'bloc/bloc_export.dart';
 import 'Theme/theme_export.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:mboa_pharmacie/provider/provider.dart';
 import 'package:mboa_pharmacie/resources/local_storage_key.dart';
 import 'package:mboa_pharmacie/resources/export_app_manager.dart';
-import 'package:mboa_pharmacie/services/internet_connection.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:mboa_pharmacie/screens/Launching/ChoseLangaugeScreen.dart';
 import 'package:mboa_pharmacie/services/localisationService/localization_service.dart';

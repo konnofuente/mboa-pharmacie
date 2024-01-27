@@ -1,10 +1,8 @@
+import 'package:flutter/material.dart';
+import 'package:mboa_pharmacie/resources/route_manager.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 // ignore_for_file: prefer_const_constructors
 
-import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:mboa_pharmacie/bloc/bloc_export.dart';
-import 'package:mboa_pharmacie/resources/route_manager.dart';
-import 'gestion_hospital.dart';
 
 
 class MyApp extends StatefulWidget {

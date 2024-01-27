@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../../../../widget/widget_export.dart';
 import 'package:mboa_pharmacie/resources/export_app_manager.dart';
 import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
+// ignore_for_file: must_be_immutable
+
 
 class LoginForm extends StatefulWidget {
   final GlobalKey<FormState> formKey;
