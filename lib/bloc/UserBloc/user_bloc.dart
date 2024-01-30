@@ -1,17 +1,17 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:equatable/equatable.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:mboa_pharmacie/models/function.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mboa_pharmacie/resources/local_storage_key.dart';
+import 'user_state.dart';
 import '../../../models/User.dart';
-import '../../screens/Home/GetStarted/getStarted_screen.dart';
 import '../../services/callApi.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:equatable/equatable.dart';
 import '../../utils/navigate_screen.dart';
 import '../../widget/widget_alertbox.dart';
-import 'user_state.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mboa_pharmacie/models/function.dart';
+import '../../screens/Home/GetStarted/getStarted_screen.dart';
+import 'package:mboa_pharmacie/resources/local_storage_key.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 part 'user_event.dart';
 
 class UserBloc extends Bloc<UserEvent, UserState> {
@@ -52,6 +52,7 @@ class UserBloc extends Bloc<UserEvent, UserState> {
       AlertBox.alertbox(event.context, "Registration",
           "Cette utilisateur existe deja", () {});
       // Emit error state or handle accordingly
+      print('uuser already existe');
     } else {
       // generate the user ID using email
       int userId = AppFunction().generateUserId(event.users.email!);

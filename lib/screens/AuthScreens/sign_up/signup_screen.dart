@@ -1,4 +1,3 @@
-import 'code_verification.dart';
 import '../../../services/auth.dart';
 import 'package:flutter/material.dart';
 import '../../../Theme/app_theme.dart';
@@ -7,7 +6,6 @@ import '../../../Theme/text_theme.dart';
 import '../../../widget/widget_icon.dart';
 import '../../../widget/widget_button.dart';
 import '../../../utils/navigate_screen.dart';
-import 'package:mboa_pharmacie/models/Role.dart';
 import '../../../widget/widget_textformfield.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import '../../../services/localisationService/t_key.dart';
@@ -50,8 +48,8 @@ class _SignUpState extends State<SignUp> {
   Widget build(BuildContext context) {
     void submitForm() {
       if (_formKey.currentState!.validate()) {
-        NavigationScreen.navigate(
-            context, CodeVerification());
+        // NavigationScreen.navigate(
+        //     context, CodeVerification());
             
         AuthService.localregisterUser(
           context: context,

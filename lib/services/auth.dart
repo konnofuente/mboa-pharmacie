@@ -1,18 +1,17 @@
-// ignore_for_file: use_build_context_synchronously
-
 import 'dart:convert';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:http/http.dart' as http;
-import 'package:mboa_pharmacie/resources/local_storage_key.dart';
-import '../bloc/UserBloc/user_bloc.dart';
-import '../models/User.dart';
-import '../screens/AuthScreens/sign_up/code_verification.dart';
-import '../screens/Home/GetStarted/getStarted_screen.dart';
-import '../utils/navigate_screen.dart';
-import '../widget/widget_alertbox.dart';
 import 'callApi.dart';
+import '../models/User.dart';
+import 'package:flutter/material.dart';
+import '../utils/navigate_screen.dart';
+import 'package:http/http.dart' as http;
+import '../widget/widget_alertbox.dart';
+import '../bloc/UserBloc/user_bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../screens/Home/GetStarted/getStarted_screen.dart';
+import '../screens/AuthScreens/sign_up/code_verification.dart';
+import 'package:mboa_pharmacie/resources/local_storage_key.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+// ignore_for_file: use_build_context_synchronously
 
 class AuthService {
   final _storage = const FlutterSecureStorage();
@@ -32,6 +31,8 @@ class AuthService {
       email: email,
       password: password,
     );
+
+    print("this is the user $newUser");
 
     UserBloc userBloc = BlocProvider.of<UserBloc>(context);
     userBloc.add(AddUsers(users: newUser, context: context));

@@ -17,7 +17,6 @@ import 'package:mboa_pharmacie/resources/local_storage_key.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:mboa_pharmacie/screens/AuthScreens/widget/export.dart';
 import 'package:mboa_pharmacie/screens/Home/GetStarted/getStarted_screen.dart';
-import 'package:mboa_pharmacie/screens/AuthScreens/sign_up/code_verification.dart';
 import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/components/login_form.dart';
 import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/components/signin_footer.dart';
 
@@ -44,7 +43,6 @@ class _SignInState extends State<SignIn> with TickerProviderStateMixin {
   Icon icon = Icon(Icons.visibility);
   Icon hide_icon = Icon(Icons.visibility_off);
   bool isPasswordVisible = false;
-  bool _isLoading = false; //bool variable created
   final _storage = const FlutterSecureStorage();
 
   Future<void> _readCredentialFromStorage() async {

@@ -29,8 +29,18 @@
   "p_num": "Numéro de téléphone",
   "email": "Email",
   "next": "Suivant ",
+  "enter":"Entre",
+  "confirm":"Confirmer",
+
+
   "already_h_acct": "Vous avez déjà un compte",
   "auth_user_info": "Votre mode utilisateur ",
+  "code":"Code",
+  "code_verif": "Vérification du code",
+  "code_verif_subtitle": "Un code de vérification a été envoyé à votre adresse e-mail. Veuillez confirmer.",
+  "req_code": "Le code est obligatoire",
+  "not_recieve_code": "Vous n'avez pas reçu le code ?",
+
   "hey": "Hey",
   "get_srt": "Commencer",
   "welcome_text": "La plateforme d'étude la plus incroyable de tous les temps, découvrez-en plus sur la plateforme",

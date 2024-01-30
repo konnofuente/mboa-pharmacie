@@ -1,10 +1,12 @@
-// ignore_for_file: prefer_const_constructors
-
+import 'gestion_hospital.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:mboa_pharmacie/bloc/bloc_export.dart';
 import 'package:mboa_pharmacie/resources/route_manager.dart';
-import 'gestion_hospital.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+// ignore_for_file: prefer_const_constructors
+
 
 
 class MyApp extends StatefulWidget {
@@ -20,14 +22,24 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
+
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      onGenerateRoute: RouteGenerator.getRoute,
-      initialRoute: Routes.mboaPharmacieRoute,
-       onUnknownRoute: (settings) => RouteGenerator.unDefinedRoute(), // Good practice to handle unknown routes
-    
+    return MultiProvider(
+      providers: [
+       BlocProvider(
+          create: (context) => UserBloc(),
+        ),
+        BlocProvider(
+          create: (context) => EquipmentCategoriesBloc(),
+        ),
+      ],
+      child: GetMaterialApp(
+        onGenerateRoute: RouteGenerator.getRoute,
+        initialRoute: Routes.mboaPharmacieRoute,
+        onUnknownRoute: (settings) => RouteGenerator.unDefinedRoute(),
+      ),
     );
   }
 }
