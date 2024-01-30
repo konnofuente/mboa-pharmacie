@@ -4,7 +4,6 @@ import '../../../../bloc/UserBloc/user_state.dart';
 import 'package:mboa_pharmacie/Theme/text_theme.dart';
 import 'package:mboa_pharmacie/Theme/theme_export.dart';
 import 'package:mboa_pharmacie/widget/widget_export.dart';
-import 'package:mboa_pharmacie/services/userServices.dart';
 
 class EditProfile extends StatefulWidget {
   const EditProfile({Key? key}) : super(key: key);
@@ -79,17 +78,7 @@ class _EditProfileState extends State<EditProfile> {
                 WidgetButton.largeButton("Save Changes",
                     AppTextTheme.buttonwhite, AppColors.primary, null, () {
                   print(firstNameController.text);
-                  // UserService().UpdateOnline(
-                  //     context,
-                  //     firstNameController.text,
-                  //     lastNameController.text,
-                  //     phoneNumberController.text,
-                  //     state.appUser!.system,
-                  //     state.appUser!.equipment_categoriesId,
-                  //     1,
-                  //     state.appUser!.role);
 
-                  // print(state.appUser!.option);
                 }),
               ],
             ),

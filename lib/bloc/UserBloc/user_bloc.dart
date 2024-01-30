@@ -96,9 +96,7 @@ Future<void> _onLoginUser(LoginUser event, Emitter<UserState> emit) async {
   final storedLastName = await _storage.read(key: LocalStorageKey.LAST_NAME);
   final storedFirstName = await _storage.read(key: LocalStorageKey.FIRST_NAME);
 
-  // Check if the stored credentials match the ones from the login event
   if (event.email == storedEmail && event.password == storedPassword) {
-    // Create a user model from the stored data
     final user = User(
       email: storedEmail,
       password: storedPassword,
@@ -108,7 +106,6 @@ Future<void> _onLoginUser(LoginUser event, Emitter<UserState> emit) async {
     );
     
     print("Successfully logged in!");
-    // Emit new state with logged-in user
     emit(UserState(appUser: user, usersList: state.usersList)); 
     loginStatusController.sink.add(true);
   } else {
@@ -117,35 +114,6 @@ Future<void> _onLoginUser(LoginUser event, Emitter<UserState> emit) async {
     loginStatusController.sink.add(false);
   }
 }
-
-
-
-// In your UserBloc
-  // Future<void> _onLoginUser(LoginUser event, Emitter<UserState> emit) async {
-  //   final state = this.state;
-
-  //   // Find a user that matches the email and password
-  //   User? matchedUser;
-  //   print("the user in state are ${state.usersList}");
-  //   for (var user in state.usersList) {
-  //     if (user.email == event.email && user.password == event.password) {
-  //       matchedUser = user;
-  //       break;
-  //     }
-  //   }
-
-  //   if (matchedUser != null) {
-  //     print("Successfully logged in!");
-  //     // Emit new state with logged-in user
-  //     emit(UserState(appUser: matchedUser));
-  //     loginStatusController.sink.add(true);
-  //   } else {
-  //     print("Invalid email or password");
-  //     // Emit error state or handle accordingly
-  //     print(state.usersList);
-  //     loginStatusController.sink.add(false);
-  //   }
-  // }
 
   Future<void> _onUpdateUser(UpdateUsers event, Emitter<UserState> emit) async {
     // final state = this.state;
