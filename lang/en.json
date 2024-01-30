@@ -59,7 +59,26 @@
   "category": "Category",
   "add_category": "Add a category",
   "create_cat": "Create Category",
-  "project": "Project"
+  "project": "Project",
+
+  
+    "settingTitle": "Settings",
+    "userName": "User Name",
+    "userProfilePic": "assets/profilpic.png",
+    "editProfileTitle": "Edit Profile",
+    "editProfileSubtitle": "Make Ziar'App yours",
+    "privacyTitle": "Privacy",
+    "privacySubtitle": "Lock Ziar'App to improve your privacy",
+    "darkModeTitle": "Dark mode",
+    "darkModeSubtitle": "Automatic",
+    "aboutTitle": "About",
+    "aboutSubtitle": "Learn more about Ziar'App",
+    "accountTitle": "Account",
+    "signOutTitle": "Sign Out",
+    "changeEmailTitle": "Change email",
+    "deleteAccountTitle": "Delete account"
+  
+  
 
 
 }

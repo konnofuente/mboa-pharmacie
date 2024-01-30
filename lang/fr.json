@@ -62,7 +62,27 @@
   "category": "Categorie",
   "add_category": "Ajouter un category d'equipement",
   "create_cat": "Cree une categorie",
-  "project": "projet"
+  "project": "projet",
+
+
+  
+    "settingTitle": "Réglages",
+    "userName": "Nom de l'utilisateur",
+    "userProfilePic": "assets/profilpic.png",
+    "editProfileTitle": "Modifier le profil",
+    "editProfileSubtitle": "Personnalisez votre Ziar'App",
+    "privacyTitle": "Confidentialité",
+    "privacySubtitle": "Verrouillez Ziar'App pour améliorer votre confidentialité",
+    "darkModeTitle": "Mode sombre",
+    "darkModeSubtitle": "Automatique",
+    "aboutTitle": "À propos",
+    "aboutSubtitle": "En savoir plus sur Ziar'App",
+    "accountTitle": "Compte",
+    "signOutTitle": "Déconnexion",
+    "changeEmailTitle": "Changer d'email",
+    "deleteAccountTitle": "Supprimer le compte"
+  
+  
 
 
 }

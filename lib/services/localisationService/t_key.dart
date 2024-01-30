@@ -1,7 +1,6 @@
 import 'localization_service.dart';
 // ignore_for_file: constant_identifier_names
 
-
 enum TKeys {
   // ignore: constant_identifier_names
   chose_lang,
@@ -15,7 +14,7 @@ enum TKeys {
   splash_title_3,
   skip,
   done,
-  
+
   admin,
   patients,
   teacher,
@@ -64,6 +63,22 @@ enum TKeys {
   add_category,
   create_cat,
   project,
+
+  settingTitle,
+  userName,
+  userProfilePic,
+  editProfileTitle,
+  editProfileSubtitle,
+  privacyTitle,
+  privacySubtitle,
+  darkModeTitle,
+  darkModeSubtitle,
+  aboutTitle,
+  aboutSubtitle,
+  accountTitle,
+  signOutTitle,
+  changeEmailTitle,
+  deleteAccountTitle,
 }
 
 //TKeys.hello

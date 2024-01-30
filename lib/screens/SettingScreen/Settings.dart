@@ -1,9 +1,10 @@
-import 'package:mboa_pharmacie/utils/navigate_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'Components/EditProfile/edit_profile.dart';
+import 'package:mboa_pharmacie/utils/navigate_screen.dart';
+import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
 import 'package:babstrap_settings_screen/babstrap_settings_screen.dart';
 
-import 'Components/EditProfile/edit_profile.dart';
 
 class SettingScreen extends StatefulWidget {
   SettingScreen({Key? key}) : super(key: key);
@@ -17,22 +18,22 @@ class _SettingScreenState extends State<SettingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white.withOpacity(.94),
-        appBar: AppBar(
-          title: Text(
-            "Settings",
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-          ),
-          centerTitle: true,
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-        ),
+        // appBar: AppBar(
+        //   title: Text(
+        //     TKeys.settingTitle.translate(context),
+        //     style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        //   ),
+        //   centerTitle: true,
+        //   backgroundColor: Colors.transparent,
+        //   elevation: 0,
+        // ),
         body: Padding(
           padding: const EdgeInsets.all(10),
           child: ListView(
             children: [
               // user card
               SimpleUserCard(
-                userName: "Nom de l'utilisateur",
+                userName: TKeys.userName.translate(context),
                 userProfilePic: AssetImage("assets/profilpic.png"),
               ),
               SettingsGroup(
@@ -43,8 +44,8 @@ class _SettingScreenState extends State<SettingScreen> {
                     },
                     icons: CupertinoIcons.pencil_outline,
                     iconStyle: IconStyle(),
-                    title: 'Edit Profile',
-                    subtitle: "Make Ziar'App yours",
+                    title: TKeys.editProfileTitle.translate(context),
+                    subtitle: TKeys.editProfileSubtitle.translate(context),
                   ),
                   SettingsItem(
                     onTap: () {},
@@ -54,8 +55,8 @@ class _SettingScreenState extends State<SettingScreen> {
                       withBackground: true,
                       backgroundColor: Colors.red,
                     ),
-                    title: 'Privacy',
-                    subtitle: "Lock Ziar'App to improve your privacy",
+                    title: TKeys.privacyTitle.translate(context),
+                    subtitle: TKeys.privacySubtitle.translate(context),
                   ),
                   SettingsItem(
                     onTap: () {},
@@ -65,8 +66,8 @@ class _SettingScreenState extends State<SettingScreen> {
                       withBackground: true,
                       backgroundColor: Colors.red,
                     ),
-                    title: 'Dark mode',
-                    subtitle: "Automatic",
+                    title: TKeys.darkModeTitle.translate(context),
+                    subtitle: TKeys.darkModeSubtitle.translate(context),
                     trailing: Switch.adaptive(
                       value: false,
                       onChanged: (value) {},
@@ -82,29 +83,29 @@ class _SettingScreenState extends State<SettingScreen> {
                     iconStyle: IconStyle(
                       backgroundColor: Colors.purple,
                     ),
-                    title: 'About',
-                    subtitle: "Learn more about Ziar'App",
+                    title: TKeys.aboutTitle.translate(context),
+                    subtitle: TKeys.aboutSubtitle.translate(context),
                   ),
                 ],
               ),
               // You can add a settings title
               SettingsGroup(
-                settingsGroupTitle: "Account",
+                settingsGroupTitle: TKeys.accountTitle.translate(context),
                 items: [
                   SettingsItem(
                     onTap: () {},
                     icons: Icons.exit_to_app_rounded,
-                    title: "Sign Out",
+                    title: TKeys.signOutTitle.translate(context),
                   ),
                   SettingsItem(
                     onTap: () {},
                     icons: CupertinoIcons.repeat,
-                    title: "Change email",
+                    title: TKeys.changeEmailTitle.translate(context),
                   ),
                   SettingsItem(
                     onTap: () {},
                     icons: CupertinoIcons.delete_solid,
-                    title: "Delete account",
+                    title: TKeys.deleteAccountTitle.translate(context),
                     titleStyle: TextStyle(
                       color: Colors.red,
                       fontWeight: FontWeight.bold,

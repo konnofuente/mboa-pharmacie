@@ -1,4 +1,4 @@
-import 'gestion_hospital.dart';
+import 'mboa_pharmacie.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
