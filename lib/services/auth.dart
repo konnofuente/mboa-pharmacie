@@ -32,8 +32,6 @@ class AuthService {
       password: password,
     );
 
-    print("this is the user $newUser");
-
     UserBloc userBloc = BlocProvider.of<UserBloc>(context);
     userBloc.add(AddUsers(users: newUser, context: context));
   }
@@ -52,8 +50,6 @@ class AuthService {
     await for (bool status
         in userBloc.loginStatusController.stream.asBroadcastStream()) {
       if (status) {
-        // Navigate to the GetStartedScreen if login is successful
-
         await _storage.write(key: LocalStorageKey.EMAIL, value: email);
         await _storage.write(key: LocalStorageKey.PASSWORD, value: password);
 

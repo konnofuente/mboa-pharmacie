@@ -48,8 +48,6 @@ class _SignUpState extends State<SignUp> {
   Widget build(BuildContext context) {
     void submitForm() {
       if (_formKey.currentState!.validate()) {
-        // NavigationScreen.navigate(
-        //     context, CodeVerification());
             
         AuthService.localregisterUser(
           context: context,

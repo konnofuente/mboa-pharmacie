@@ -1,16 +1,19 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:mboa_pharmacie/models/enum.dart';
-import 'package:mboa_pharmacie/screens/SettingScreen/Settings.dart';
+import 'package:share/share.dart';
+import '../provider/provider.dart';
+import '../Theme/theme_export.dart';
+import '../utils/utils_export.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-import '../Theme/theme_export.dart';
-import '../provider/provider.dart';
-import '../screens/AuthScreens/sign_in/signin_screen.dart';
+import 'package:mboa_pharmacie/models/enum.dart';
 import '../services/localisationService/t_key.dart';
-import '../utils/utils_export.dart';
+import '../screens/AuthScreens/sign_in/signin_screen.dart';
+// ignore_for_file: prefer_const_declarations
+
+// ignore_for_file: prefer_const_constructors
+
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+
 
 class AppDrawer extends StatefulWidget {
   late Function onTapCallBackFunction;
@@ -68,13 +71,7 @@ class _AppDrawerState extends State<AppDrawer> {
           onLongPress: () {},
         ),
         const Divider(),
-        // ListTile(
-        //   title: Text(TKeys.download.translate(context)),
-        //   leading: Icon(Icons.download),
-        //    onTap: () {
-        //     NavigationScreen.replaceNavigate(context, DownloadScreen());
-        //   },
-        // ),
+
         ListTile(
             title: Text('Share App'),
             leading: const Icon(Icons.share),
@@ -113,7 +110,6 @@ class _AppDrawerState extends State<AppDrawer> {
             title: Text(TKeys.logout.translate(context)),
             leading: const Icon(Icons.close),
             onTap: () {
-              // Navigator.of(context).pop();
               Provider.of<AppStatus>(context, listen: false).isLoggedIn = false;
               NavigationScreen.replaceNavigate(context, SignIn());
             }),

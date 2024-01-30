@@ -51,7 +51,6 @@ class UserBloc extends Bloc<UserEvent, UserState> {
     if (doesUserExist(event.users.email!, state.usersList)) {
       AlertBox.alertbox(event.context, "Registration",
           "Cette utilisateur existe deja", () {});
-      // Emit error state or handle accordingly
       print('uuser already existe');
     } else {
       // generate the user ID using email
@@ -69,6 +68,12 @@ class UserBloc extends Bloc<UserEvent, UserState> {
           key: LocalStorageKey.EMAIL, value: event.users.email);
       await _storage.write(
           key: LocalStorageKey.PASSWORD, value: event.users.password);
+      await _storage.write(
+          key: LocalStorageKey.PHONE_NUMBER, value: event.users.phoneNumber);
+      await _storage.write(
+          key: LocalStorageKey.LAST_NAME, value: event.users.lastName);
+      await _storage.write(
+          key: LocalStorageKey.FIRST_NAME, value: event.users.firstName);
 
       AlertBox.awesomeOkBox(
           event.context, "Registration", "Successfully saved user", () {
@@ -83,31 +88,64 @@ class UserBloc extends Bloc<UserEvent, UserState> {
     }
   }
 
-// In your UserBloc
-  Future<void> _onLoginUser(LoginUser event, Emitter<UserState> emit) async {
-    final state = this.state;
+Future<void> _onLoginUser(LoginUser event, Emitter<UserState> emit) async {
+  // Retrieve user data from local storage
+  final storedEmail = await _storage.read(key: LocalStorageKey.EMAIL);
+  final storedPassword = await _storage.read(key: LocalStorageKey.PASSWORD);
+  final storedPhoneNumber = await _storage.read(key: LocalStorageKey.PHONE_NUMBER);
+  final storedLastName = await _storage.read(key: LocalStorageKey.LAST_NAME);
+  final storedFirstName = await _storage.read(key: LocalStorageKey.FIRST_NAME);
 
-    // Find a user that matches the email and password
-    User? matchedUser;
-    for (var user in state.usersList) {
-      if (user.email == event.email && user.password == event.password) {
-        matchedUser = user;
-        break;
-      }
-    }
-
-    if (matchedUser != null) {
-      print("Successfully logged in!");
-      // Emit new state with logged-in user
-      emit(UserState(appUser: matchedUser));
-      loginStatusController.sink.add(true);
-    } else {
-      print("Invalid email or password");
-      // Emit error state or handle accordingly
-      print(state.usersList);
-      loginStatusController.sink.add(false);
-    }
+  // Check if the stored credentials match the ones from the login event
+  if (event.email == storedEmail && event.password == storedPassword) {
+    // Create a user model from the stored data
+    final user = User(
+      email: storedEmail,
+      password: storedPassword,
+      phoneNumber: storedPhoneNumber,
+      lastName: storedLastName,
+      firstName: storedFirstName,
+    );
+    
+    print("Successfully logged in!");
+    // Emit new state with logged-in user
+    emit(UserState(appUser: user, usersList: state.usersList)); 
+    loginStatusController.sink.add(true);
+  } else {
+    print("Invalid email or password");
+    emit(UserState(appUser: null, usersList: state.usersList)); 
+    loginStatusController.sink.add(false);
   }
+}
+
+
+
+// In your UserBloc
+  // Future<void> _onLoginUser(LoginUser event, Emitter<UserState> emit) async {
+  //   final state = this.state;
+
+  //   // Find a user that matches the email and password
+  //   User? matchedUser;
+  //   print("the user in state are ${state.usersList}");
+  //   for (var user in state.usersList) {
+  //     if (user.email == event.email && user.password == event.password) {
+  //       matchedUser = user;
+  //       break;
+  //     }
+  //   }
+
+  //   if (matchedUser != null) {
+  //     print("Successfully logged in!");
+  //     // Emit new state with logged-in user
+  //     emit(UserState(appUser: matchedUser));
+  //     loginStatusController.sink.add(true);
+  //   } else {
+  //     print("Invalid email or password");
+  //     // Emit error state or handle accordingly
+  //     print(state.usersList);
+  //     loginStatusController.sink.add(false);
+  //   }
+  // }
 
   Future<void> _onUpdateUser(UpdateUsers event, Emitter<UserState> emit) async {
     // final state = this.state;
