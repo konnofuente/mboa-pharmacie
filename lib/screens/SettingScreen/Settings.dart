@@ -4,6 +4,7 @@ import 'package:mboa_pharmacie/models/User.dart';
 import 'Components/EditProfile/edit_profile.dart';
 import 'package:mboa_pharmacie/bloc/bloc_export.dart';
 import 'package:mboa_pharmacie/utils/navigate_screen.dart';
+import 'package:mboa_pharmacie/resources/export_app_manager.dart';
 import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
 import 'package:babstrap_settings_screen/babstrap_settings_screen.dart';
 
@@ -27,7 +28,6 @@ class _SettingScreenState extends State<SettingScreen> {
     userInformation = BlocProvider.of<UserBloc>(context).state.appUser!;
 
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,9 +40,10 @@ class _SettingScreenState extends State<SettingScreen> {
               SimpleUserCard(
                 // userName:  TKeys.userName.translate(context),
                 userName:  userInformation.lastName ?? TKeys.userName.translate(context) ,
-                userProfilePic: AssetImage("assets/profilpic.png"),
+                userProfilePic: AssetImage(ImageAssets.profile),
               ),
               SettingsGroup(
+                settingsGroupTitle: TKeys.accountTitle.translate(context),
                 items: [
                   SettingsItem(
                     onTap: () {
@@ -64,21 +65,21 @@ class _SettingScreenState extends State<SettingScreen> {
                     title: TKeys.privacyTitle.translate(context),
                     subtitle: TKeys.privacySubtitle.translate(context),
                   ),
-                  SettingsItem(
-                    onTap: () {},
-                    icons: Icons.dark_mode_rounded,
-                    iconStyle: IconStyle(
-                      iconsColor: Colors.white,
-                      withBackground: true,
-                      backgroundColor: Colors.red,
-                    ),
-                    title: TKeys.darkModeTitle.translate(context),
-                    subtitle: TKeys.darkModeSubtitle.translate(context),
-                    trailing: Switch.adaptive(
-                      value: false,
-                      onChanged: (value) {},
-                    ),
-                  ),
+                  // SettingsItem(
+                  //   onTap: () {},
+                  //   icons: Icons.dark_mode_rounded,
+                  //   iconStyle: IconStyle(
+                  //     iconsColor: Colors.white,
+                  //     withBackground: true,
+                  //     backgroundColor: Colors.red,
+                  //   ),
+                  //   title: TKeys.darkModeTitle.translate(context),
+                  //   subtitle: TKeys.darkModeSubtitle.translate(context),
+                  //   trailing: Switch.adaptive(
+                  //     value: false,
+                  //     onChanged: (value) {},
+                  //   ),
+                  // ),
                 ],
               ),
               SettingsGroup(
@@ -96,18 +97,17 @@ class _SettingScreenState extends State<SettingScreen> {
               ),
               // You can add a settings title
               SettingsGroup(
-                settingsGroupTitle: TKeys.accountTitle.translate(context),
                 items: [
                   SettingsItem(
                     onTap: () {},
                     icons: Icons.exit_to_app_rounded,
                     title: TKeys.signOutTitle.translate(context),
                   ),
-                  SettingsItem(
-                    onTap: () {},
-                    icons: CupertinoIcons.repeat,
-                    title: TKeys.changeEmailTitle.translate(context),
-                  ),
+                  // SettingsItem(
+                  //   onTap: () {},
+                  //   icons: CupertinoIcons.repeat,
+                  //   title: TKeys.changeEmailTitle.translate(context),
+                  // ),
                   SettingsItem(
                     onTap: () {},
                     icons: CupertinoIcons.delete_solid,

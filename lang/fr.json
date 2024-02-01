@@ -31,8 +31,7 @@
   "next": "Suivant ",
   "enter":"Entre",
   "confirm":"Confirmer",
-
-
+  "save":"Enregistre",
   "already_h_acct": "Vous avez déjà un compte",
   "auth_user_info": "Votre mode utilisateur ",
   "code":"Code",
@@ -80,7 +79,9 @@
     "accountTitle": "Compte",
     "signOutTitle": "Déconnexion",
     "changeEmailTitle": "Changer d'email",
-    "deleteAccountTitle": "Supprimer le compte"
+    "deleteAccountTitle": "Supprimer le compte",
+    "changeProfilePic": "Changer l'image de profil"
+  
   
   
 

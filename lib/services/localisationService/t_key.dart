@@ -34,6 +34,7 @@ enum TKeys {
   next,
   enter,
   confirm,
+  save,
   already_h_acct,
   auth_user_info,
   code,
@@ -79,6 +80,7 @@ enum TKeys {
   signOutTitle,
   changeEmailTitle,
   deleteAccountTitle,
+  changeProfilePic
 }
 
 //TKeys.hello

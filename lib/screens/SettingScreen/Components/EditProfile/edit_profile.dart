@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import '../../../../bloc/bloc_export.dart';
 import '../../../../bloc/UserBloc/user_state.dart';
-import 'package:mboa_pharmacie/Theme/text_theme.dart';
 import 'package:mboa_pharmacie/Theme/theme_export.dart';
 import 'package:mboa_pharmacie/widget/widget_export.dart';
+import 'package:mboa_pharmacie/resources/export_app_manager.dart';
+import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
+// ignore_for_file: prefer_const_constructors
+
 
 class EditProfile extends StatefulWidget {
   const EditProfile({Key? key}) : super(key: key);
@@ -13,20 +16,13 @@ class EditProfile extends StatefulWidget {
 }
 
 class _EditProfileState extends State<EditProfile> {
-  String val = "dfdf";
   TextEditingController emailController = TextEditingController();
   TextEditingController firstNameController = TextEditingController();
   TextEditingController lastNameController = TextEditingController();
   TextEditingController phoneNumberController = TextEditingController();
   TextEditingController systemController = TextEditingController();
   TextInputType textKeytype = TextInputType.text;
-  String name = "John Doe";
-  String email = "johndoe@example.com";
-  String phone = "123-456-7890";
-  String password = "*********";
-  String imageUrl =
-      "https://images.unsplash.com/photo-1521747116042-5a810fda9663?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdyb3VwJTIwcGhvdG9ncmFwaHklMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80";
-
+ 
   Future<void> _displayUserInfo() async {
     final userstate = context.read<UserBloc>().state;
     emailController = TextEditingController(text: userstate.appUser!.email);
@@ -47,7 +43,7 @@ class _EditProfileState extends State<EditProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Settings"),
+          title: Text(TKeys.settingTitle.translate(context)),
         ),
         body: BlocBuilder<UserBloc, UserState>(builder: (context, state) {
           return SingleChildScrollView(
@@ -59,23 +55,23 @@ class _EditProfileState extends State<EditProfile> {
                   backgroundImage: AssetImage("assets/Images/avatar.png"),
                   radius: 60.0,
                 ),
-                SizedBox(height: 10.0),
+                SizedBox(height: AppSize.s10),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text("Change profile picture"),
+                  child: Text(TKeys.changeProfilePic.translate(context)),
                 ),
-                SizedBox(height: 10.0),
+                SizedBox(height: AppSize.s10),
                 WidgetTextForm.updateTextField(
-                    "First Name", firstNameController, textKeytype, null, null),
-                SizedBox(height: 10.0),
+                    TKeys.f_name.translate(context), firstNameController, textKeytype, null, null),
+                SizedBox(height: AppSize.s10),
                 WidgetTextForm.updateTextField(
-                    "Last Name", lastNameController, textKeytype, null, null),
-                SizedBox(height: 10.0),
-                WidgetTextForm.updateTextField("Phone Number",
+                    TKeys.s_name.translate(context), lastNameController, textKeytype, null, null),
+                SizedBox(height: AppSize.s10),
+                WidgetTextForm.updateTextField(TKeys.p_num.translate(context),
                     phoneNumberController, textKeytype, null, null),
-                SizedBox(height: 10.0),
-                SizedBox(height: 10.0),
-                WidgetButton.largeButton("Save Changes",
+                SizedBox(height: AppSize.s10),
+                SizedBox(height: AppSize.s10),
+                WidgetButton.largeButton(TKeys.save.translate(context),
                     AppTextTheme.buttonwhite, AppColors.primary, null, () {
                   print(firstNameController.text);
 

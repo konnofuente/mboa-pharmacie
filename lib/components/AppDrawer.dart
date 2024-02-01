@@ -1,4 +1,6 @@
+import '../models/User.dart';
 import 'package:share/share.dart';
+import '../bloc/bloc_export.dart';
 import '../provider/provider.dart';
 import '../Theme/theme_export.dart';
 import '../utils/utils_export.dart';
@@ -28,16 +30,31 @@ class AppDrawer extends StatefulWidget {
 
 class _AppDrawerState extends State<AppDrawer> {
   @override
+
+  @override
+  void initState() {
+    _getUserInformation();
+    super.initState();
+  }
+
+  late User userInformation = User();
+
+  void _getUserInformation() {
+    userInformation = BlocProvider.of<UserBloc>(context).state.appUser!;
+
+  }
+
+
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(padding: const EdgeInsets.all(0.0), children: <Widget>[
         UserAccountsDrawerHeader(
-          accountName: const Text(
-            'User',
+          accountName: Text(
+            userInformation.firstName!,
             style: AppTextTheme.body1,
           ),
-          accountEmail: const Text(
-            'admin@evaltech.com',
+          accountEmail:  Text(
+            userInformation.email!,
             style: AppTextTheme.body2,
           ),
           currentAccountPicture: CircleAvatar(
