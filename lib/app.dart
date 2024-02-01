@@ -31,9 +31,6 @@ class _MyAppState extends State<MyApp> {
        BlocProvider(
           create: (context) => UserBloc(),
         ),
-        BlocProvider(
-          create: (context) => EquipmentCategoriesBloc(),
-        ),
       ],
       child: GetMaterialApp(
         onGenerateRoute: RouteGenerator.getRoute,

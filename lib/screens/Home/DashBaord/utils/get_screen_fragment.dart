@@ -1,22 +1,20 @@
+import 'package:flutter/material.dart';
 import 'package:mboa_pharmacie/models/enum.dart';
-import 'package:mboa_pharmacie/screens/AllEquipementCategories/all_equipement_categoryScreen.dart';
-import 'package:mboa_pharmacie/screens/Home/DashBaord/DashBoard.dart';
 import 'package:mboa_pharmacie/screens/Projet/projet.dart';
 import 'package:mboa_pharmacie/screens/SettingScreen/Settings.dart';
-import 'package:flutter/material.dart';
+import 'package:mboa_pharmacie/screens/Home/DashBaord/DashBoard.dart';
 
-import '../../../Statistics/statistics.dart';
 
 AppDrawerTitle screen = AppDrawerTitle.Home;
 Widget getDashboardFragment(int selectedIndex) {
   if (selectedIndex == 0) {
     return ProjetScreen();
   } else if (selectedIndex == 1) {
-    return AllEquipementCategoryScreen();
+    return ProjetScreen();
   } else if (selectedIndex == 2) {
-    return StatisticScreen();
+    return ProjetScreen();
   }
-  return AllEquipementCategoryScreen();
+  return ProjetScreen();
 }
 
 Widget getHomeFragment(AppDrawerTitle val) {

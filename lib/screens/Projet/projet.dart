@@ -14,7 +14,7 @@ class _ProjetScreenState extends State<ProjetScreen> {
         // body: LatexScreen(),
         body: Center(
       child: Text(
-        "Pas de Projet enregistre",
+        "Empty page",
         style: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.bold,

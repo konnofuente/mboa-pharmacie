@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../../Theme/theme_export.dart';
 import '../../services/localisationService/t_key.dart';
+
 
 class ListBottomNavigationItem {
   List<BottomNavigationBarItem> dashboardListItem(BuildContext context) {
@@ -12,7 +12,7 @@ class ListBottomNavigationItem {
           color: Color.fromRGBO(78, 86, 107, 1),
           size: 24.66,
         ),
-        label: TKeys.project.translate(context),
+        label: TKeys.page.translate(context),
         activeIcon: Icon(
           Icons.info,
           color: AppColors.primarydark,
@@ -25,7 +25,7 @@ class ListBottomNavigationItem {
           color: Color.fromRGBO(78, 86, 107, 1),
           size: 24.66,
         ),
-        label: TKeys.category.translate(context),
+        label: TKeys.page.translate(context),
         activeIcon: Icon(
           Icons.category,
           color: AppColors.primarydark,
@@ -39,7 +39,7 @@ class ListBottomNavigationItem {
           color: Color.fromRGBO(78, 86, 107, 1),
           size: 24.66,
         ),
-        label: TKeys.stat.translate(context),
+        label: TKeys.page.translate(context),
         activeIcon: Icon(
           Icons.dashboard,
           color: AppColors.primarydark,
