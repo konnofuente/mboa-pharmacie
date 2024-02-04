@@ -50,7 +50,7 @@ class _AcademicInformationState extends State<AcademicInformation> {
       "ANGLOPHONE",
     ];
     equipment_categoriesList = [
-      "Select Your EquipmentCategories",
+      "Select Your DrugCategories",
       "Form 1",
       "Form 2",
       "Form 3",
@@ -166,7 +166,7 @@ class _AcademicInformationState extends State<AcademicInformation> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: DropdownButton<String>(
-                          hint: Text("Select Your EquipmentCategories"),
+                          hint: Text("Select Your DrugCategories"),
                           value: equipment_categories,
                           icon: Icon(
                             Icons.keyboard_arrow_down_outlined,

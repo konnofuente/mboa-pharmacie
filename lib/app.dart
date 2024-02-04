@@ -7,8 +7,6 @@ import 'package:mboa_pharmacie/resources/route_manager.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 // ignore_for_file: prefer_const_constructors
 
-
-
 class MyApp extends StatefulWidget {
   // ignore: prefer_const_constructors_in_immutables
   MyApp._internal();
@@ -22,17 +20,16 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-       BlocProvider(
+        BlocProvider(
           create: (context) => UserBloc(),
         ),
         BlocProvider(
-          create: (context) => EquipmentCategoriesBloc(),
+          create: (context) => DrugCategoriesBloc(),
         ),
       ],
       child: GetMaterialApp(

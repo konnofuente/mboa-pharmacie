@@ -1,6 +1,6 @@
-import 'package:mboa_pharmacie/models/EquipementCategories.dart';
-import 'package:mboa_pharmacie/screens/AllEquipementCategories/components/all_equipement_categoriesList.dart';
 import 'package:flutter/material.dart';
+import 'package:mboa_pharmacie/models/DrugCategories.dart';
+import 'package:mboa_pharmacie/screens/AllDrugCategories/components/all_drug_categoriesList.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -8,7 +8,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  late List<EquipmentCategories> classList;
+  late List<DrugCategories> classList;
 
   @override
   void initState() {
@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
       childAspectRatio: 8.0 / 9.0,
       children: classList
           .map(
-            (Item) => AllEquipmentCategoriesList(equipment_categories: Item),
+            (Item) => AllDrugCategoriesList(equipment_categories: Item),
           )
           .toList(),
     );

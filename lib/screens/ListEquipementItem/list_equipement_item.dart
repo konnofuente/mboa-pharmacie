@@ -1,14 +1,13 @@
-﻿// ignore_for_file: prefer_const_constructors
-import 'package:mboa_pharmacie/widget/equipement_categories/header_banner.dart';
-import 'package:flutter/material.dart';
-
-import '../../models/EquipementCategories.dart';
+﻿import 'package:flutter/material.dart';
 import 'components/get_item_list.dart';
+import '../../models/DrugCategories.dart';
+import 'package:mboa_pharmacie/widget/equipement_categories/header_banner.dart';
+// ignore_for_file: prefer_const_constructors
 
-class ListEquipementItem extends StatelessWidget {
-  final EquipmentCategories equipment_categories;
+class ListDrugItem extends StatelessWidget {
+  final DrugCategories equipment_categories;
 
-  ListEquipementItem(this.equipment_categories);
+  ListDrugItem(this.equipment_categories);
 
   @override
   Widget build(BuildContext context) {

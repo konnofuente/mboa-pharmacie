@@ -1,18 +1,17 @@
-import 'package:mboa_pharmacie/Theme/theme_export.dart';
 import 'package:flutter/material.dart';
-
-import '../../../models/EquipementCategories.dart';
-import '../../../models/EquipementItem.dart';
+import '../../../models/DrugItem.dart';
+import '../../../models/DrugCategories.dart';
 import '../../../utils/navigate_screen.dart';
+import 'package:mboa_pharmacie/Theme/theme_export.dart';
 
 class GetItemList extends StatelessWidget {
-  final EquipmentCategories equipmentCategory;
+  final DrugCategories equipmentCategory;
 
   GetItemList({required this.equipmentCategory});
 
   @override
   Widget build(BuildContext context) {
-    List<EquipmentItem> itemsList = equipmentCategory.items;
+    List<DrugItem> itemsList = equipmentCategory.items;
 
     if (itemsList.isEmpty) {
       return Center(

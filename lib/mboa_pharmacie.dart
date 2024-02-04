@@ -1,18 +1,18 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:mboa_pharmacie/provider/provider.dart';
-import 'package:mboa_pharmacie/resources/export_app_manager.dart';
-import 'package:mboa_pharmacie/resources/local_storage_key.dart';
-import 'package:mboa_pharmacie/screens/Launching/ChoseLangaugeScreen.dart';
-import 'package:mboa_pharmacie/services/internet_connection.dart';
-import 'package:mboa_pharmacie/services/localisationService/localization_service.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:provider/provider.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'Theme/theme_export.dart';
-import 'bloc/EquipementCategoriesBloc/equipement_categories_event.dart';
 import 'bloc/bloc_export.dart';
+import 'Theme/theme_export.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:mboa_pharmacie/provider/provider.dart';
+import 'bloc/DrugCategoriesBloc/drug_categories_event.dart';
+import 'package:mboa_pharmacie/resources/local_storage_key.dart';
+import 'package:mboa_pharmacie/resources/export_app_manager.dart';
+import 'package:mboa_pharmacie/services/internet_connection.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:mboa_pharmacie/screens/Launching/ChoseLangaugeScreen.dart';
+import 'package:mboa_pharmacie/services/localisationService/localization_service.dart';
 
 void main() {
   runApp(const MboaPharmacie());
@@ -39,11 +39,11 @@ class _MboaPharmacie extends State<MboaPharmacie> {
   Future<void> _loadingProcess() async {
     await _FetchMboaPharmacieData();
     checkUserLoggedIn();
-    //  context.read<EquipmentCategoriesBloc>().add(FetchEquipmentCategoriess());
+    //  context.read<DrugCategoriesBloc>().add(FetchDrugCategoriess());
   }
 
   Future<void> _FetchMboaPharmacieData() async {
-    context.read<EquipmentCategoriesBloc>().add(FetchEquipmentCategoriess());
+    context.read<DrugCategoriesBloc>().add(FetchDrugCategoriess());
     InternetConnection().CheckInternetConnectivity(context);
   }
 

@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
-
-import '../../bloc/EquipementCategoriesBloc/equipement_categories_bloc.dart';
 import '../../bloc/bloc_export.dart';
+import 'package:flutter/material.dart';
+import '../../bloc/DrugCategoriesBloc/drug_categories_bloc.dart';
 
 class StatisticScreen extends StatefulWidget {
   StatisticScreen();
@@ -22,10 +21,9 @@ class _StatisticScreenState extends State<StatisticScreen> {
   int totalItems = 0;
 
   void _getStatistics(BuildContext context) {
-    EquipmentCategoriesBloc equipmentCategoriesBloc =
-        BlocProvider.of<EquipmentCategoriesBloc>(context);
-    totalCategories =
-        equipmentCategoriesBloc.state.allEquipmentCategories.length;
+    DrugCategoriesBloc equipmentCategoriesBloc =
+        BlocProvider.of<DrugCategoriesBloc>(context);
+    totalCategories = equipmentCategoriesBloc.state.allDrugCategories.length;
     print(totalCategories);
   }
 

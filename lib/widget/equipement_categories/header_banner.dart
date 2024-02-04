@@ -1,11 +1,10 @@
-import 'package:flutter/material.dart';
-
-import '../../models/EquipementCategories.dart';
-import 'header_content.dart';
 import 'header_image.dart';
+import 'header_content.dart';
+import 'package:flutter/material.dart';
+import '../../models/DrugCategories.dart';
 
 class HeaderBanner extends StatelessWidget {
-  final EquipmentCategories equipment_categories;
+  final DrugCategories equipment_categories;
 
   HeaderBanner(this.equipment_categories);
 

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-
-import '../../models/EquipementCategories.dart';
+import '../../models/DrugCategories.dart';
 
 class HeaderContent extends StatelessWidget {
-  final EquipmentCategories equipment_categories;
+  final DrugCategories equipment_categories;
 
   HeaderContent(this.equipment_categories);
 
