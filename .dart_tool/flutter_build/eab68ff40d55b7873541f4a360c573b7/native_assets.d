@@ -1,1 +1,0 @@
- C:\\Users\\ap\\Documents\\Project\\flutter\\mboa-pharmacie\\.dart_tool\\flutter_build\\eab68ff40d55b7873541f4a360c573b7\\native_assets.yaml: 
