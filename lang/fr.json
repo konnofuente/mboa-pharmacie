@@ -10,7 +10,7 @@
   "splash_text_3": "Nous livrons rapidement vos médicaments. Les coursiers utilisent un équipement protecteur.",
   "skip": "Suivant",
   "done": "Valide",
-  
+
   "admin": "Administrateur",
   "patients": "Patients",
 
@@ -29,12 +29,12 @@
   "p_num": "Numéro de téléphone",
   "email": "Email",
   "next": "Suivant ",
-  "enter":"Entre",
-  "confirm":"Confirmer",
-  "save":"Enregistre",
+  "enter": "Entre",
+  "confirm": "Confirmer",
+  "save": "Enregistre",
   "already_h_acct": "Vous avez déjà un compte",
   "auth_user_info": "Votre mode utilisateur ",
-  "code":"Code",
+  "code": "Code",
   "code_verif": "Vérification du code",
   "code_verif_subtitle": "Un code de vérification a été envoyé à votre adresse e-mail. Veuillez confirmer.",
   "req_code": "Le code est obligatoire",
@@ -62,31 +62,35 @@
   "add_category": "Ajouter un category d'equipement",
   "create_cat": "Cree une categorie",
   "project": "projet",
-  "ordonance":"Ordonance",
-  "screen":"ecran",
+  "ordonance": "Ordonance",
+  "screen": "ecran",
 
+  "settingTitle": "Réglages",
+  "userName": "Nom de l'utilisateur",
+  "userProfilePic": "assets/profilpic.png",
+  "editProfileTitle": "Modifier le profil",
+  "editProfileSubtitle": "Personnalisez votre Ziar'App",
+  "privacyTitle": "Confidentialité",
+  "privacySubtitle": "Verrouillez Ziar'App pour améliorer votre confidentialité",
+  "darkModeTitle": "Mode sombre",
+  "darkModeSubtitle": "Automatique",
+  "aboutTitle": "À propos",
+  "aboutSubtitle": "En savoir plus sur Ziar'App",
+  "accountTitle": "Compte",
+  "signOutTitle": "Déconnexion",
+  "changeEmailTitle": "Changer d'email",
+  "deleteAccountTitle": "Supprimer le compte",
+  "changeProfilePic": "Changer l'image de profil",
 
+  "addDrugCategory": "Ajouter une catégorie de médicament",
+  "enterName": "Entrez le nom",
+  "description": "Description",
+  "enterDescription": "Entrez la description",
+  "date": "Date",
+  "pickADate": "Choisissez une date",
+  "symtomsPickADate": "Choisissez une date de dubut des Syntoms",
+  "attachAnImage": "Attacher une image",
 
-  
-    "settingTitle": "Réglages",
-    "userName": "Nom de l'utilisateur",
-    "userProfilePic": "assets/profilpic.png",
-    "editProfileTitle": "Modifier le profil",
-    "editProfileSubtitle": "Personnalisez votre Ziar'App",
-    "privacyTitle": "Confidentialité",
-    "privacySubtitle": "Verrouillez Ziar'App pour améliorer votre confidentialité",
-    "darkModeTitle": "Mode sombre",
-    "darkModeSubtitle": "Automatique",
-    "aboutTitle": "À propos",
-    "aboutSubtitle": "En savoir plus sur Ziar'App",
-    "accountTitle": "Compte",
-    "signOutTitle": "Déconnexion",
-    "changeEmailTitle": "Changer d'email",
-    "deleteAccountTitle": "Supprimer le compte",
-    "changeProfilePic": "Changer l'image de profil"
-  
-  
-  
-
-
+  "ordonnanceSuccess": "Votre ordonnance a été envoyée avec succès",
+  "emptyFieldAlert": "Assurez-vous que vous avez entré toutes les informations dans le champ d'information"
 }

@@ -15,7 +15,9 @@ import '../../../services/localisationService/t_key.dart';
 import 'package:mboa_pharmacie/models/DrugCategories.dart';
 import 'package:mboa_pharmacie/widget/widget_alertbox.dart';
 import '../../../widget/imagePicker/image_oval_picker.dart';
+import 'package:mboa_pharmacie/resources/export_app_manager.dart';
 import 'package:mboa_pharmacie/bloc/DrugCategoriesBloc/drug_categories_event.dart';
+
 
 class MedicalPrescription extends StatefulWidget {
   const MedicalPrescription({Key? key}) : super(key: key);
@@ -63,8 +65,6 @@ class _MedicalPrescriptionState extends State<MedicalPrescription> {
       setState(() {
         _image = File(pickedFile.path);
       });
-      // For demonstration, we're setting the imageUrl to the picked image path
-      // You can upload the image to your server and set the URL here
       imageUrl = pickedFile.path;
     }
   }
@@ -83,32 +83,12 @@ class _MedicalPrescriptionState extends State<MedicalPrescription> {
   void SaveDrugCategory(BuildContext context) {
     if (nameController.text.isNotEmpty &&
         directorsController.text.isNotEmpty 
-        // && bannerUrl!.isNotEmpty &&
-        // imageUrl!.isNotEmpty
-        
         ) {
-      // DrugCategories newDrugCategory = DrugCategories(
-      //   id: 1, // Generate ID here
-      //   name: nameController.text,
-      //   items: [],
-      //   releaseDateDesc: releaseDateController.text,
-      //   directors: directorsController.text,
-      //   desc: descController.text,
-      //   imageUrl: imageUrl,
-      //   bannerUrl: bannerUrl,
-      // );
-
-      // print(newDrugCategory);
-      // DrugCategoriesBloc equipmentCategoriesBloc =
-      //     BlocProvider.of<DrugCategoriesBloc>(context);
-
-      // equipmentCategoriesBloc
-      //     .add(AddDrugCategories(DrugCategory: newDrugCategory));
 
       AlertBox.awesomeOkBox(
           context,
           "Drug",
-          "La Categorie ${nameController.text} a ete cree avec success!!!",
+          TKeys.ordonnanceSuccess.translate(context),
           () {});
 
       emptyField();
@@ -116,7 +96,7 @@ class _MedicalPrescriptionState extends State<MedicalPrescription> {
       AlertBox.awesomeAlertBox(
           context,
           "Drug",
-          "Assure vous que vous avec entre tous les information dans  champ d'information",
+          TKeys.emptyFieldAlert.translate(context),
           () {});
     }
   }
@@ -127,7 +107,7 @@ class _MedicalPrescriptionState extends State<MedicalPrescription> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Add Drug Category"),
+        title: Text(TKeys.sendPrescription.translate(context)),
         automaticallyImplyLeading: false,
       ),
       body: SingleChildScrollView(
@@ -136,23 +116,23 @@ class _MedicalPrescriptionState extends State<MedicalPrescription> {
           child: Column(
             children: [
               WidgetTextForm.getTextField(
-                  "Name",
+                  TKeys.name.translate(context),
                   nameController,
                   TextInputType.text,
-                  "Enter name",
+                  TKeys.enterName.translate(context),
                   WidgetIcon.userAccount(false)),
               SizedBox(
-                height: 15,
+                height: AppSize.s16,
               ),
               WidgetTextForm.getTextField(
-                  "Description",
+                  TKeys.description.translate(context),
                   descController,
                   TextInputType.multiline,
-                  "Enter description",
+                  TKeys.enterDescription.translate(context),
                   WidgetIcon.description(false)
                   ),
               SizedBox(
-                height: 15,
+                height: AppSize.s16,
               ),
               // Date Picker
               TextFormField(
@@ -169,38 +149,32 @@ class _MedicalPrescriptionState extends State<MedicalPrescription> {
                         "${pickedDate.year}-${pickedDate.month}-${pickedDate.day}";
                 },
                 decoration: InputDecoration(
-                  labelText: "Date",
-                  hintText: "Pick a Date",
+                  labelText: TKeys.symtomsPickADate.translate(context),
+                  hintText: TKeys.pickADate.translate(context),
                 ),
               ),
               // Image upload placeholders
               SizedBox(
-                height: 15,
+                height: AppSize.s16,
               ),
 
               ImageOvalPickerWidget(
-                label: "Attache an Image",
+                label: TKeys.attachAnImage.translate(context),
                 onImagePicked: (image) {
                   // Do something with the picked image, like updating the Drug variable
                   imageUrl = image.path;
                 },
               ),
               SizedBox(
-                height: 15,
+                height: AppSize.s16,
               ),
 
-              // ImageOvalPickerWidget(
-              //   label: "télécharger la photo banner ",
-              //   onImagePicked: (image) {
-              //     bannerUrl = image.path;
-              //     // Do something with the picked image, like updating the Drug variable
-              //   },
-              // ),
+            
               SizedBox(
-                height: 15,
+                height: AppSize.s16,
               ),
 
-              WidgetButton.largeButton('Envoyer lordonnace',
+              WidgetButton.largeButton(TKeys.sendPrescription.translate(context),
                   AppTextTheme.buttonwhite, AppColors.primary, null, () async {
                 SaveDrugCategory(context);
               }),
@@ -215,7 +189,7 @@ class _MedicalPrescriptionState extends State<MedicalPrescription> {
     return Column(
       children: [
         Text(
-          "Upload Drug Image",
+          TKeys.sendPrescription.translate(context),
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 16,
@@ -227,8 +201,8 @@ class _MedicalPrescriptionState extends State<MedicalPrescription> {
           children: [
             _image == null
                 ? Container(
-                    width: 100,
-                    height: 100,
+                    width: AppSize.s100,
+                    height: AppSize.s100,
                     decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(50),
@@ -238,8 +212,8 @@ class _MedicalPrescriptionState extends State<MedicalPrescription> {
                 : ClipOval(
                     child: Image.file(
                       _image!,
-                      width: 100,
-                      height: 100,
+                      width: AppSize.s100,
+                      height: AppSize.s100,
                       fit: BoxFit.cover,
                     ),
                   ),

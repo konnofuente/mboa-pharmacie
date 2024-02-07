@@ -65,6 +65,7 @@
   "screen":"screen",
 
 
+
   
     "settingTitle": "Settings",
     "userName": "User Name",
@@ -81,7 +82,21 @@
     "signOutTitle": "Sign Out",
     "changeEmailTitle": "Change email",
     "deleteAccountTitle": "Delete account",
-    "changeProfilePic":"Change profile picture"
+    "changeProfilePic":"Change profile picture",
+
+
+  "addDrugCategory": "Add Drug Category",
+  "enterName": "Enter name",
+  "description": "Description",
+  "enterDescription": "Enter description",
+  "date": "Date",
+  "pickADate": "Pick a Date",
+  "symtomsPickADate": "Pick a Date Symtoms Started",
+  "attachAnImage": "Attach an Image",
+  "sendPrescription": "Send Prescription",
+
+  "ordonnanceSuccess": "Your ordonnance was successfully sent",
+    "emptyFieldAlert": "Make sure you have entered all the information in the information field"
   
   
 

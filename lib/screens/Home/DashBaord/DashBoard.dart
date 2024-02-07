@@ -1,12 +1,11 @@
-import 'package:mboa_pharmacie/components/AppBottomNavigation.dart/DashBaordBottomNavigation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
-
 import '../../../Theme/app_theme.dart';
+import 'utils/get_screen_fragment.dart';
 import '../../../components/component_export.dart';
 import '../../../services/localisationService/t_key.dart';
-import '../../../widget/widget_export.dart';
-import 'utils/get_screen_fragment.dart';
+import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
+import 'package:mboa_pharmacie/components/AppBottomNavigation.dart/DashBaordBottomNavigation.dart';
+
 
 class DashBoard extends StatefulWidget {
   const DashBoard({Key? key}) : super(key: key);
@@ -22,21 +21,7 @@ class _DashBoardState extends State<DashBoard> {
   String AppBarTitle = 'Gestion Hopital';
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  void AppBarName() {
-    switch (selectedIndex) {
-      case 0:
-        AppBarTitle = 'Projet';
-        break;
-      case 1:
-        AppBarTitle = 'Gestion Hopital';
-        break;
-      case 2:
-        AppBarTitle = TKeys.download.translate(context);
-        break;
-      default:
-        AppBarTitle = 'Gestion Hopital';
-    }
-  }
+
 
   _changeSelectedIndex(index) {
     setState(() {

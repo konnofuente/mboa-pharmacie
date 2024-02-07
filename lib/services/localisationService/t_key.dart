@@ -82,7 +82,21 @@ enum TKeys {
   signOutTitle,
   changeEmailTitle,
   deleteAccountTitle,
-  changeProfilePic
+  changeProfilePic,
+
+
+ addDrugCategory,
+ enterName,
+ description,
+ enterDescription,
+ date,
+ pickADate,
+ symtomsPickADate,
+ attachAnImage,
+ sendPrescription,
+
+ ordonnanceSuccess,
+ emptyFieldAlert
 }
 
 //TKeys.hello

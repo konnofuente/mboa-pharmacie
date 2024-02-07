@@ -1,5 +1,3 @@
-import 'dart:io';
-import '../../../models/Item.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../provider/provider.dart';
@@ -9,7 +7,7 @@ import 'package:mboa_pharmacie/Theme/theme_export.dart';
 import 'package:mboa_pharmacie/resources/style_manager.dart';
 import 'package:mboa_pharmacie/resources/value_manager.dart';
 import 'package:mboa_pharmacie/screens/Home/GetRatings.dart';
-import 'package:mboa_pharmacie/screens/AdminDrugCategory/drug_category.dart';
+
 
 
 

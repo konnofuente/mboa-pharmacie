@@ -49,8 +49,6 @@ class _SignInState extends State<SignIn> with TickerProviderStateMixin {
     emailController.text = (await _storage.read(key: LocalStorageKey.EMAIL))!;
     passwordController.text =
         (await _storage.read(key: LocalStorageKey.PASSWORD))!;
-    token = (await _storage.read(key: "evaltech_KEY_TOKEN"))!;
-    print("$emailController  $passwordController  $token");
   }
 
   @override

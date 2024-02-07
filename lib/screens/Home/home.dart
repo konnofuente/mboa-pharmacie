@@ -1,10 +1,11 @@
+import 'package:flutter/material.dart';
+import '../../components/component_export.dart';
 import 'package:mboa_pharmacie/models/enum.dart';
+import 'package:mboa_pharmacie/widget/widget_export.dart';
+import 'package:mboa_pharmacie/resources/export_app_manager.dart';
 import 'package:mboa_pharmacie/screens/Home/DashBaord/DashBoard.dart';
 import 'package:mboa_pharmacie/screens/Home/DashBaord/utils/get_screen_fragment.dart';
-import 'package:mboa_pharmacie/widget/widget_export.dart';
-import 'package:flutter/material.dart';
 
-import '../../components/component_export.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  String AppBarTitle = 'Gestion Hopital';
+  String AppBarTitle = AppStrings.MboaPharmacieTitle;
   AppDrawerTitle ScreenName = AppDrawerTitle.Home;
 
   _changeScreenName(AppDrawerTitle val) {

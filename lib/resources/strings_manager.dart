@@ -3,7 +3,7 @@ class AppStrings {
   static const String skip = "Skip";
 
   // MboaPharmacie String
-  static const String MboaPharmacieTitle = "MboaPharmacie";
+  static const String MboaPharmacieTitle = "Mboa Pharmacie";
   static const String checkConnection = "check your internet connection";
 
   //Error
