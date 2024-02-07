@@ -64,6 +64,8 @@ enum TKeys {
   add_category,
   create_cat,
   project,
+  ordonance,
+  screen,
 
   settingTitle,
   userName,

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-
 import '../../Theme/theme_export.dart';
 import '../../services/localisationService/t_key.dart';
+import 'package:mboa_pharmacie/resources/value_manager.dart';
+
 
 class ListBottomNavigationItem {
   List<BottomNavigationBarItem> dashboardListItem(BuildContext context) {
@@ -10,24 +11,24 @@ class ListBottomNavigationItem {
         icon: Icon(
           Icons.info,
           color: Color.fromRGBO(78, 86, 107, 1),
-          size: 24.66,
+          size: AppSize.s24,
         ),
-        label: TKeys.project.translate(context),
+        label: TKeys.screen.translate(context),
         activeIcon: Icon(
           Icons.info,
           color: AppColors.primarydark,
-          size: 24.66,
+          size: AppSize.s24,
         ),
       ),
       BottomNavigationBarItem(
         icon: Icon(
-          Icons.category,
+          Icons.home,
           color: Color.fromRGBO(78, 86, 107, 1),
-          size: 24.66,
+          size: AppSize.s24,
         ),
-        label: TKeys.category.translate(context),
+        label: TKeys.home.translate(context),
         activeIcon: Icon(
-          Icons.category,
+          Icons.home,
           color: AppColors.primarydark,
           size:
               23.00, // Adjusted the size for the active icon, as in your original code
@@ -35,15 +36,15 @@ class ListBottomNavigationItem {
       ),
       BottomNavigationBarItem(
         icon: Icon(
-          Icons.dashboard,
+          Icons.medical_services_rounded,
           color: Color.fromRGBO(78, 86, 107, 1),
-          size: 24.66,
+          size: AppSize.s24,
         ),
-        label: TKeys.stat.translate(context),
+        label: TKeys.ordonance.translate(context),
         activeIcon: Icon(
-          Icons.dashboard,
+          Icons.medical_services_rounded,
           color: AppColors.primarydark,
-          size: 24.66,
+          size: AppSize.s24,
         ),
       ),
     ];

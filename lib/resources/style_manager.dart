@@ -1,6 +1,6 @@
+import 'font_manager.dart';
 import 'package:flutter/cupertino.dart';
 
-import 'font_manager.dart';
 
 TextStyle _getTextStyle(
     double fontSize, String fontFamily, FontWeight fontWeight,Color color) {
@@ -57,7 +57,7 @@ TextStyle getMediumStyle(
 
 //PADDING !!!
 
-EdgeInsetsGeometry _getLTRBPadding(double left, double top, double right, double bottom) {
+EdgeInsetsGeometry getLTRBPadding(double left, double top, double right, double bottom) {
   return EdgeInsets.fromLTRB(left, top, right, bottom);
 }
 
@@ -66,21 +66,21 @@ EdgeInsetsGeometry getSymmetricPadding(double vertical, double horizontal,) {
 }
 EdgeInsetsGeometry getLTRPadding(
    double left ,  double top, double right ) {
-  return _getLTRBPadding(left, top, right, 0);
+  return getLTRBPadding(left, top, right, 0);
 }
 EdgeInsetsGeometry getRegularPadding(
   {double left = 0, double top = 0, double right = 0, double bottom = 0}) {
-  return _getLTRBPadding(left, top, right, bottom);
+  return getLTRBPadding(left, top, right, bottom);
 }
 
 EdgeInsetsGeometry getHorizontalPadding(double value) {
-  return _getLTRBPadding(value, 0, value, 0);
+  return getLTRBPadding(value, 0, value, 0);
 }
 
 EdgeInsetsGeometry getVerticalPadding(double value) {
-  return _getLTRBPadding(0, value, 0, value);
+  return getLTRBPadding(0, value, 0, value);
 }
 
 EdgeInsetsGeometry getAllPadding(double value) {
-  return _getLTRBPadding(value, value, value, value);
+  return getLTRBPadding(value, value, value, value);
 }

@@ -43,14 +43,21 @@ class _AllDrugCategoryScreenState extends State<AllDrugCategoryScreen>
     List<DrugCategories> drugCategoriesList = [
    DrugCategories(
       id: 1,
-      name: 'Category A',
+      name: 'Paracetamol',
       items: [],
-      imageUrl: 'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750138549521L.jpg',
-      bannerUrl: 'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750138549521L.jpg',
+      imageUrl: 'https://th.bing.com/th/id/R.5bb34d74e356117336ff043c42f12163?rik=j5yHygmFP5hnDQ&pid=ImgRaw&r=0',
+      bannerUrl: 'https://th.bing.com/th/id/R.5bb34d74e356117336ff043c42f12163?rik=j5yHygmFP5hnDQ&pid=ImgRaw&r=0',
     ),
     DrugCategories(
       id: 2,
-      name: 'Category B',
+      name: 'Doliprane',
+      items: [],
+      imageUrl: 'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750157390391L.jpg',
+      bannerUrl: 'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750157390391L.jpg',
+    ),
+    DrugCategories(
+      id: 2,
+      name: 'Doliprane',
       items: [],
       imageUrl: 'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750157390391L.jpg',
       bannerUrl: 'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750157390391L.jpg',
@@ -67,6 +74,7 @@ class _AllDrugCategoryScreenState extends State<AllDrugCategoryScreen>
     return BlocBuilder<DrugCategoriesBloc, DrugCategoriesState>(
       builder: (context, state) {
         return Scaffold(
+          backgroundColor: AppColors.lightgray,
           body: Center(
             child: Column(
               children: [
@@ -83,7 +91,6 @@ class _AllDrugCategoryScreenState extends State<AllDrugCategoryScreen>
                 // ),
                 SizedBox(height: 10),
                 Expanded(
-                  // child: state.allDrugCategories.isNotEmpty
                   child: drugCategoriesList.isNotEmpty
                       ? FadeTransition(
                           opacity: _animation,

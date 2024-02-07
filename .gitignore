@@ -1,0 +1,23 @@
+# See https://www.gitignore.io/api/dart,flutter
+
+# IntelliJ / Android Studio
+.idea
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio Code
+.vscode
+
+# Flutter/Dart specific files
+**.dart_tool/
+.dart_tool/
+**.flutter-plugins
+**.flutter-plugins-dependencies
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+packages/
+.pub/
+build/
+.dart_tool/flutter_build/eab68ff40d55b7873541f4a360c573b7/.filecache

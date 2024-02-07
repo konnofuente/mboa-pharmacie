@@ -8,6 +8,7 @@ abstract class AppColors {
   static const bottomtap = Color.fromRGBO(242, 242, 242, 1);
   static const labelText = Color.fromRGBO(90, 91, 91, 1);
   static const gray = Color.fromRGBO(11126, 141, 155, 1);
+  static const lightgray = Color.fromRGBO(240, 245, 247, 1);
   static const success = Color.fromRGBO(0, 159, 6, 1);
   static const danger = Color.fromARGB(255, 164, 45, 2);
   static const white = Color.fromRGBO(255, 255, 255, 1);
