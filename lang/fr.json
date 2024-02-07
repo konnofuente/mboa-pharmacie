@@ -40,6 +40,28 @@
   "req_code": "Le code est obligatoire",
   "not_recieve_code": "Vous n'avez pas reçu le code ?",
 
+  "otpVerification": "Vérification OTP",
+  "aVerificationCodeHaveBeenSendToYourEmailPleaseConfirm": "Un code de vérification a été envoyé à votre adresse e-mail. Veuillez confirmer",
+  "enterCode": "Entrez le code",
+  "didNotRecieveCode": "Vous n'avez pas reçu le code ?",
+  "resend": "renvoyer",
+
+  "resetPassword": "Réinitialiser le mot de passe",
+  "inputNewPassword": "Vous devrez entrer un autre mot de passe pour votre nouveau mot de passe M. @gmail.com",
+  "newPassword": "Nouveau mot de passe",
+  "passwordRequired": "mot de passe requis",
+  "repeatPassword": "Répéter le mot de passe",
+  "passwordNotMatch": "le mot de passe ne correspond pas",
+  "reset": "Réinitialiser",
+  "loginError": "ERREUR DE CONNEXION",
+  "invalidCredentials": "Les informations d'identification saisies sont invalides",
+
+  "enterEmail": "Entrer l'e-mail",
+  "enterPhoneNumber": "Entrer le numéro de téléphone",
+  "verificationMessage": "Donnez votre e-mail pour que evaltech puisse vous envoyer un code de vérification",
+  "useAnotherMethod": "Utiliser une autre méthode ?",
+  "phoneNumber": "Numéro de téléphone",
+
   "hey": "Hey",
   "get_srt": "Commencer",
   "welcome_text": "La plateforme d'étude la plus incroyable de tous les temps, découvrez-en plus sur la plateforme",
@@ -88,7 +110,7 @@
   "enterDescription": "Entrez la description",
   "date": "Date",
   "pickADate": "Choisissez une date",
-  "symtomsPickADate": "Choisissez une date de dubut des Syntoms",
+  "symtomsPickADate": "Choisissez une date de debut des Syntoms",
   "attachAnImage": "Attacher une image",
 
   "ordonnanceSuccess": "Votre ordonnance a été envoyée avec succès",

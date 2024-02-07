@@ -25,7 +25,7 @@ class SignInFooter extends StatelessWidget {
         WidgetButton.textButton(TKeys.f_pwd.translate(context),
             AppTextTheme.caption, () {
           NavigationScreen.replaceNavigate(
-              context, const ConfirmEmail());
+              context, ConfirmEmail());
         }),
         const SizedBox(
           height: AppSize.s20,

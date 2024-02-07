@@ -3,7 +3,9 @@ import '../../Theme/text_theme.dart';
 import 'package:flutter/material.dart';
 import '../../widget/widget_button.dart';
 import '../../utils/navigate_screen.dart';
+import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
 import 'package:mboa_pharmacie/screens/AuthScreens/reset_password.dart';
+
 
 class OTPVerification extends StatefulWidget {
   const OTPVerification({Key? key}) : super(key: key);
@@ -33,7 +35,7 @@ class _OTPVerificationState extends State<OTPVerification> {
               Row(
                 children: [
                   Text(
-                    'OTP Verification',
+                    TKeys.otpVerification.translate(context),
                     style: AppTextTheme.bigtitle,
                   ),
                 ],
@@ -45,7 +47,7 @@ class _OTPVerificationState extends State<OTPVerification> {
                 children: [
                   Flexible(
                       child: Text(
-                    "a verification code have been send to your email please confirm",
+                    TKeys.aVerificationCodeHaveBeenSendToYourEmailPleaseConfirm.translate(context),
                     style: AppTextTheme.caption,
                   )),
                 ],
@@ -61,7 +63,6 @@ class _OTPVerificationState extends State<OTPVerification> {
                     TextFormField(
                         decoration: const InputDecoration(
                           labelText: 'Enter Code ',
-                          hintText: "",
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.all(
                                 Radius.circular(10.0),
@@ -80,17 +81,17 @@ class _OTPVerificationState extends State<OTPVerification> {
                           setState(() => pwd = val);
                         }),
                     SizedBox(height: 40),
-                    WidgetButton.largeButton('Confirm',
+                    WidgetButton.largeButton(TKeys.confirm.translate(context),
                         AppTextTheme.buttonwhite, AppColors.primary, null, () {
                       NavigationScreen.navigate(context, ResetPassword());
                     }),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        WidgetButton.textButton('Did not recieve code ?',
+                        WidgetButton.textButton(TKeys.didNotRecieveCode.translate(context),
                             AppTextTheme.body2, () {}),
                         WidgetButton.textButton(
-                            'resend', AppTextTheme.link, () {}),
+                            TKeys.resend.translate(context), AppTextTheme.link, () {}),
                       ],
                     ),
                   ],
@@ -103,26 +104,4 @@ class _OTPVerificationState extends State<OTPVerification> {
     );
   }
 
-  Future<void> showalertDialogue() async {
-    Widget okButton = ElevatedButton(
-      child: Text("OK"),
-      onPressed: () {
-        Navigator.pop(context);
-      },
-    );
-
-    AlertDialog alert = AlertDialog(
-      title: Text("LOGIN ERROR"),
-      content: Text("Credential Enter are Invalid "),
-      actions: [
-        okButton,
-      ],
-    );
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return alert;
-      },
-    );
-  }
 }

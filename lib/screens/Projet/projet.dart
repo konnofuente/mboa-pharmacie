@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
 
 class ProjetScreen extends StatefulWidget {
   const ProjetScreen({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class _ProjetScreenState extends State<ProjetScreen> {
         // body: LatexScreen(),
         body: Center(
       child: Text(
-        "Pas de Projet enregistre",
+        TKeys.screen.translate(context),
         style: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.bold,

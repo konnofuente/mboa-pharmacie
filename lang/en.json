@@ -39,6 +39,30 @@
   "code_verif_subtitle":"a verification code have been send to your email please confirm",
   "req_code":"code is required",
   "not_recieve_code":"Did not recieve code ?",
+  
+  "otpVerification": "OTP Verification",
+  "aVerificationCodeHaveBeenSendToYourEmailPleaseConfirm": "A verification code has been sent to your email. Please confirm",
+  "enterCode": "Enter Code",
+  "didNotRecieveCode": "Did not receive code?",
+  "resend": "resend",
+
+  "resetPassword": "Reset Password",
+  "inputNewPassword": "You will have to input another password for your new password Mr @gmail.com",
+  "newPassword": "New Password",
+  "passwordRequired": "password required",
+  "repeatPassword": "Repeat Password",
+  "passwordNotMatch": "password don't match",
+  "reset": "Reset",
+  "loginError": "LOGIN ERROR",
+  "invalidCredentials": "Credential entered is invalid",
+
+  "enterEmail": "Enter Email",
+  "enterPhoneNumber": "Enter Phone Number",
+  "verificationMessage": "Give your email so that evaltech can send you a verification code",
+  "useAnotherMethod": "Use Another method ?",
+  "phoneNumber": "Phone Number",
+
+  
   "hey": "Hey",
   "get_srt": "Get Started",
   "welcome_text": "The most incredible studie platform of all time discouver more in the platform ",

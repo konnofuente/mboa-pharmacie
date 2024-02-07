@@ -70,12 +70,8 @@ class _SignInState extends State<SignIn> with TickerProviderStateMixin {
   }
 
   Future<void> loginVerification() async {
-    // print('this is the email ${emailController.text}');
-    // print('this is the email ${phoneNumberController.text}');
 
     if (_formKey.currentState!.validate()) {
-      // NavigationScreen.navigate(
-      //       context, GetStartedScreen());
 
 
       AuthService authService = AuthService();

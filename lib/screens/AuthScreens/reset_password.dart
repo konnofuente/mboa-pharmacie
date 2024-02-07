@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import '../../widget/widget_icon.dart';
 import '../../widget/widget_button.dart';
 import '../../utils/navigate_screen.dart';
+import 'package:mboa_pharmacie/services/localisationService/t_key.dart';
 import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/signin_screen.dart';
+
 
 class ResetPassword extends StatefulWidget {
   const ResetPassword({Key? key}) : super(key: key);
@@ -35,7 +37,7 @@ class _ResetPasswordState extends State<ResetPassword> {
               Row(
                 children: [
                   Text(
-                    'Reset Password',
+                    TKeys.resetPassword.translate(context),
                     style: AppTextTheme.bigtitle,
                   ),
                 ],
@@ -60,14 +62,14 @@ class _ResetPasswordState extends State<ResetPassword> {
                 child: Column(
                   children: [
                     SizedBox(height: 20),
-                    getTextField('New Password', passwordKeytype,
-                        ' password required', WidgetIcon.passwordKey(false)),
+                    getTextField(TKeys.newPassword.translate(context), passwordKeytype,
+                        TKeys.passwordRequired.translate(context), WidgetIcon.passwordKey(false)),
                     SizedBox(height: 20),
-                    getTextField('Repeat Password', passwordKeytype,
-                        ' password dont match', WidgetIcon.passwordKey(false)),
+                    getTextField(TKeys.repeatPassword.translate(context), passwordKeytype,
+                        TKeys.passwordNotMatch.translate(context), WidgetIcon.passwordKey(false)),
                     SizedBox(height: 20),
                     SizedBox(height: 40),
-                    WidgetButton.largeButton('Reset', AppTextTheme.buttonwhite,
+                    WidgetButton.largeButton(TKeys.reset.translate(context), AppTextTheme.buttonwhite,
                         AppColors.primary, null, () {
                       NavigationScreen.navigate(context, SignIn());
                     }),
@@ -110,26 +112,4 @@ class _ResetPasswordState extends State<ResetPassword> {
         });
   }
 
-  Future<void> showalertDialogue() async {
-    Widget okButton = ElevatedButton(
-      child: Text("OK"),
-      onPressed: () {
-        Navigator.pop(context);
-      },
-    );
-
-    AlertDialog alert = AlertDialog(
-      title: Text("LOGIN ERROR"),
-      content: Text("Credential Enter are Invalid "),
-      actions: [
-        okButton,
-      ],
-    );
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return alert;
-      },
-    );
-  }
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../Statistics/statistics.dart';
 import 'package:mboa_pharmacie/models/enum.dart';
 import 'package:mboa_pharmacie/screens/Projet/projet.dart';
 import 'package:mboa_pharmacie/screens/SettingScreen/Settings.dart';
