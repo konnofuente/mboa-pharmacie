@@ -112,6 +112,7 @@
   "pickADate": "Choisissez une date",
   "symtomsPickADate": "Choisissez une date de debut des Syntoms",
   "attachAnImage": "Attacher une image",
+  "sendPrescription": "Envoyer l'ordonance ",
 
   "ordonnanceSuccess": "Votre ordonnance a été envoyée avec succès",
   "emptyFieldAlert": "Assurez-vous que vous avez entré toutes les informations dans le champ d'information"
