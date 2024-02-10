@@ -32,7 +32,6 @@ class ConsultantsListPage extends StatelessWidget {
       time: "07:55",
       unreadCount: 4,
     ),
-    // Add more consultants here
   ];
   
 
