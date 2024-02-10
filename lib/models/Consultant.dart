@@ -1,6 +1,17 @@
 class Consultant {
-  final String name;
   final String id;
+  final String name;
+  final String messagePreview;
+  final String imageUrl;
+  final String time;
+  final int unreadCount;
 
-  Consultant({required this.name, required this.id});
+  Consultant({
+    this.id = '',
+    this.name = '',
+    this.messagePreview = '',
+    this.imageUrl = '',
+    this.time = '',
+    this.unreadCount = 0,
+  });
 }
