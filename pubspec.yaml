@@ -67,6 +67,7 @@ dependencies:
   share: ^2.0.4
   url_launcher: ^6.1.10
   rename: ^3.0.1
+  flutter_chat_ui: ^1.6.12
 
   # state management, intelligent dependency injection, and route management
   

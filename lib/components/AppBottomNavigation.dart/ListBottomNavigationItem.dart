@@ -8,26 +8,26 @@ class ListBottomNavigationItem {
   List<BottomNavigationBarItem> dashboardListItem(BuildContext context) {
     return [
       BottomNavigationBarItem(
-        icon: Icon(
-          Icons.info,
+        icon: const Icon(
+          Icons.healing_outlined,
           color: Color.fromRGBO(78, 86, 107, 1),
           size: AppSize.s24,
         ),
         label: TKeys.screen.translate(context),
-        activeIcon: Icon(
-          Icons.info,
+        activeIcon: const Icon(
+          Icons.healing_outlined,
           color: AppColors.primarydark,
           size: AppSize.s24,
         ),
       ),
       BottomNavigationBarItem(
-        icon: Icon(
+        icon: const Icon(
           Icons.home,
           color: Color.fromRGBO(78, 86, 107, 1),
           size: AppSize.s24,
         ),
         label: TKeys.home.translate(context),
-        activeIcon: Icon(
+        activeIcon: const Icon(
           Icons.home,
           color: AppColors.primarydark,
           size:
@@ -35,13 +35,27 @@ class ListBottomNavigationItem {
         ),
       ),
       BottomNavigationBarItem(
+        // ignore: prefer_const_constructors
         icon: Icon(
+          Icons.chat,
+          color: const Color.fromRGBO(78, 86, 107, 1),
+          size: AppSize.s24,
+        ),
+        label: TKeys.consultation.translate(context),
+        activeIcon: const Icon(
+          Icons.chat,
+          color: AppColors.primarydark,
+          size: AppSize.s24,
+        ),
+      ),
+      BottomNavigationBarItem(
+        icon: const Icon(
           Icons.medical_services_rounded,
           color: Color.fromRGBO(78, 86, 107, 1),
           size: AppSize.s24,
         ),
         label: TKeys.ordonance.translate(context),
-        activeIcon: Icon(
+        activeIcon: const Icon(
           Icons.medical_services_rounded,
           color: AppColors.primarydark,
           size: AppSize.s24,
