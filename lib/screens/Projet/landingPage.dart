@@ -41,7 +41,7 @@ class LandingPage extends StatelessWidget {
             ),
             SizedBox(height: 24),
              Container(
-              height: 200, // Set to desired height for grid items
+              height: 300, // Set to desired height for grid items
               child: GridView.builder(
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
@@ -53,17 +53,21 @@ class LandingPage extends StatelessWidget {
                 ),
                 itemCount: 16, // Replace with your actual item count
                 itemBuilder: (context, index) {
-                  return Card(
-                    child: Center(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: <Widget>[
-                          Icon(Icons.widgets), // Replace with the correct icon
-                          Text('Option ${index + 1}'), // Replace with the correct text
-                        ],
-                      ),
-                    ),
-                  );
+                 return Card(
+                   child: Padding(
+                     padding: const EdgeInsets.all(16.0), // Adjust the padding as per your requirement
+                     child: Center(
+                       child: Column(
+                         mainAxisSize: MainAxisSize.min,
+                         children: <Widget>[
+                           Icon(Icons.widgets), // Replace with the correct icon
+                           Text('Option ${index + 1}'), // Replace with the correct text
+                         ],
+                       ),
+                     ),
+                   ),
+                 );
+                 
                 },
               ),
             ),
@@ -74,21 +78,16 @@ class LandingPage extends StatelessWidget {
             ),
             // Add ListView.builder for documents
             ListTile(
-              title: Text('Les actualités'),
+              title: Text(
+                'Les actualités',
+                textAlign: TextAlign.left, // Align the text to the left
+              ),
+              
               trailing: Icon(Icons.arrow_forward),
             ),
             // Add ListView.builder for news items
 
-             Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-          child: Text(
-            'Les actualités',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16,
-            ),
-          ),
-        ),
+  
         ListView.builder(
           physics: NeverScrollableScrollPhysics(), // to disable ListView's scrolling
           shrinkWrap: true, // necessary to wrap the content of the ListView

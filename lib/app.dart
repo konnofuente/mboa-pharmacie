@@ -33,6 +33,7 @@ class _MyAppState extends State<MyApp> {
         ),
       ],
       child: GetMaterialApp(
+        debugShowCheckedModeBanner: false,
         onGenerateRoute: RouteGenerator.getRoute,
         initialRoute: Routes.mboaPharmacieRoute,
         onUnknownRoute: (settings) => RouteGenerator.unDefinedRoute(),
