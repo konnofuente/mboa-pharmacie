@@ -7,8 +7,8 @@ class WidgetButton {
       Color backgroundColor, Widget? logo, void Function() onpressed) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-          onSurface: AppColors.primary,
-          primary: backgroundColor,
+          backgroundColor: AppColors.primary,
+          foregroundColor: backgroundColor,
           fixedSize: const Size(350, 50)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,

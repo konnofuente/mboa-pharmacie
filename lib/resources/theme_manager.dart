@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'color_manager.dart';
 import 'font_manager.dart';
+import 'color_manager.dart';
 import 'style_manager.dart';
 import 'value_manager.dart';
+import 'package:flutter/material.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
@@ -41,19 +41,19 @@ ThemeData getApplicationTheme() {
           style: ElevatedButton.styleFrom(
               textStyle: getRegularStyle(
                   color: ColorManager.primary, fontSize: FontSize.s12),
-              primary: ColorManager.primary,
+              foregroundColor: ColorManager.primary,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(AppSize.s12)))),
 
       //Text theme
 
       textTheme: TextTheme(
-          headline1: getSemiBoldStyle(
+          displayLarge: getSemiBoldStyle(
               color: ColorManager.darkGrey, fontSize: FontSize.s16),
-          subtitle1: getMediumStyle(
+          displayMedium: getMediumStyle(
               color: ColorManager.lightGrey, fontSize: FontSize.s14),
-          caption: getRegularStyle(color: ColorManager.grey1),
-          bodyText1: getRegularStyle(color: ColorManager.grey)),
+          labelSmall: getRegularStyle(color: ColorManager.grey1),
+          bodyMedium: getRegularStyle(color: ColorManager.grey)),
           
            inputDecorationTheme: InputDecorationTheme(
         contentPadding: EdgeInsets.all(AppPadding.p8),

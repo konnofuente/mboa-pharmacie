@@ -24,18 +24,19 @@ class AppTextTheme {
   static const FontWeight bold = FontWeight.w700;
 
   static const TextTheme textTheme = TextTheme(
-    headline3: bigtitle,
-    headline4: header,
-    headline5: title,
-    headline6: appbartitle,
-    subtitle1: gridlisttitle,
-    subtitle2: listtitle,
-    bodyText2: body2,
-    bodyText1: body1,
-    caption: caption,
-    button: buttonwhite,
-    headline2: buttonblack,
-    overline: link,
+   displayLarge:bigtitle ,
+    titleLarge: header,
+    displayMedium: title,
+    displaySmall: appbartitle,
+    titleMedium: gridlisttitle,
+    titleSmall: listtitle,
+    bodyLarge: body2,
+    bodySmall: body1,
+    labelLarge: caption,
+    labelMedium: buttonblack,
+    labelSmall: link,
+
+
   );
 
   static const TextStyle bigtitle = TextStyle(
