@@ -32,5 +32,11 @@ Map<String, dynamic> latex_content = {
 
 };
 
+class AppConstants {
+  static const appName = "Mboa Phamacie";
+  static const packageName = "com.example.mboa_pharmacie";
+  static const cacheDays = 3;
+  static const serverUrl = "http://localhost:8084/mboa";
+}
 
 
