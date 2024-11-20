@@ -14,9 +14,6 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:mboa_pharmacie/screens/Launching/ChoseLangaugeScreen.dart';
 import 'package:mboa_pharmacie/services/localisationService/localization_service.dart';
 
-void main() {
-  runApp(const MboaPharmacie());
-}
 
 class MboaPharmacie extends StatefulWidget {
   const MboaPharmacie({Key? key}) : super(key: key);
