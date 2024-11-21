@@ -5,6 +5,8 @@ import 'package:provider/provider.dart';
 import 'package:mboa_pharmacie/bloc/bloc_export.dart';
 import 'package:mboa_pharmacie/resources/route_manager.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:mboa_pharmacie/services/localisationService/localization_service.dart';
+
 // ignore_for_file: prefer_const_constructors
 
 class MyApp extends StatefulWidget {
@@ -37,6 +39,10 @@ class _MyAppState extends State<MyApp> {
         onGenerateRoute: RouteGenerator.getRoute,
         initialRoute: Routes.mboaPharmacieRoute,
         onUnknownRoute: (settings) => RouteGenerator.unDefinedRoute(),
+
+        supportedLocales: LocalizationService.supportedLocales,
+  localeResolutionCallback: LocalizationService.localeResolutionCallBack,
+  localizationsDelegates: LocalizationService.localizationsDelegate,
       ),
     );
   }
