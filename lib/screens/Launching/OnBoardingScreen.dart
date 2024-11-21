@@ -57,14 +57,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           style: AppTextTheme.buttonblack,
         ),
         onDone: () {
-          Provider.of<AppStatus>(context, listen: false).isLoggedIn == false
-              ? NavigationScreen.navigate(context, ChoseUserMode())
-              : NavigationScreen.navigate(context, Home());
+          // Provider.of<AppStatus>(context, listen: false).isLoggedIn == false
+          //     ? NavigationScreen.navigate(context, ChoseUserMode())
+          //     : NavigationScreen.navigate(context, Home());
+          NavigationScreen.navigate(context, Home());
         },
         onSkip: () {
-          Provider.of<AppStatus>(context, listen: false).isLoggedIn == false
-              ? NavigationScreen.navigate(context, ChoseUserMode())
-              : NavigationScreen.navigate(context, Home());
+          // Provider.of<AppStatus>(context, listen: false).isLoggedIn == false
+          //     ? NavigationScreen.navigate(context, ChoseUserMode())
+          //     : NavigationScreen.navigate(context, Home());
+          NavigationScreen.navigate(context, Home());
         },
         next: Icon(Icons.arrow_forward_ios, color: AppColors.primary),
         animationDuration: 400,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mboa_pharmacie/Theme/app_theme.dart';
 import 'package:mboa_pharmacie/models/MedicalDocument.dart';
+import 'package:mboa_pharmacie/utils/checkLoginAndProceed.dart';
 
 class LandingPage extends StatelessWidget {
   final List<NewsItem> newsItems = [
@@ -22,65 +23,77 @@ class LandingPage extends StatelessWidget {
   List<MedicalDocument> dummyMedicalDocuments = [
     MedicalDocument(
       name: 'Analyse ordonnance',
-      imgUrl: 'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
+      imgUrl:
+          'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'recherche',
-      imgUrl: 'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
+      imgUrl:
+          'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'Analyse ordonnance',
-      imgUrl: 'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
+      imgUrl:
+          'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'recherche',
-      imgUrl: 'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
+      imgUrl:
+          'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'Analyse ordonnance',
-      imgUrl: 'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
+      imgUrl:
+          'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'recherche',
-      imgUrl: 'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
+      imgUrl:
+          'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'Analyse ordonnance',
-      imgUrl: 'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
+      imgUrl:
+          'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'recherche',
-      imgUrl: 'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
+      imgUrl:
+          'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'Analyse ordonnance',
-      imgUrl: 'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
+      imgUrl:
+          'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'recherche',
-      imgUrl: 'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
+      imgUrl:
+          'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'Analyse ordonnance',
-      imgUrl: 'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
+      imgUrl:
+          'https://th.bing.com/th/id/R.30cb72efd312b2a3c668065be1ed14ea?rik=lw1mgk81YwgsCQ&pid=ImgRaw&r=0',
       date: DateTime.now(),
     ),
     MedicalDocument(
       name: 'recherche',
-      imgUrl: 'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
+      imgUrl:
+          'https://icon-library.com/images/medical-equipment-icon/medical-equipment-icon-14.jpg',
       date: DateTime.now(),
     ),
-   
+
     // Add more dummy documents as needed
   ];
 
@@ -121,30 +134,37 @@ class LandingPage extends StatelessWidget {
                   ),
                   itemCount: dummyMedicalDocuments.length,
                   itemBuilder: (context, index) {
-                    return Card(
-                      color: Colors.white, // Replace with appropriate color
-                      child: Padding(
-                        padding: const EdgeInsets.all(
-                            16.0), // Adjust the padding as per your requirement
-                        child: Center(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              Flexible(
-                                flex: 1,
-                                child: Image.network(
-                                  dummyMedicalDocuments[index].imgUrl,
-                                  fit: BoxFit
-                                      .cover, // Choose the appropriate fit for the image
+                    return GestureDetector(
+                      onTap: () {
+                        // Call the checkLoginAndProceed function before navigating
+                        // print('click');
+                        checkLoginAndProceed(context, null);
+                      },
+                      child: Card(
+                        color: Colors.white, // Replace with appropriate color
+                        child: Padding(
+                          padding: const EdgeInsets.all(
+                              16.0), // Adjust the padding as per your requirement
+                          child: Center(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                Flexible(
+                                  flex: 1,
+                                  child: Image.network(
+                                    dummyMedicalDocuments[index].imgUrl,
+                                    fit: BoxFit
+                                        .cover, // Choose the appropriate fit for the image
+                                  ),
                                 ),
-                              ),
-                              SizedBox(
-                                  height:
-                                      10), // Add some spacing below the image
-                              Text(
-                                dummyMedicalDocuments[index].name,
-                              ),
-                            ],
+                                SizedBox(
+                                    height:
+                                        10), // Add some spacing below the image
+                                Text(
+                                  dummyMedicalDocuments[index].name,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
