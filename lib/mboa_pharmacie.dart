@@ -40,7 +40,7 @@ class _MboaPharmacie extends State<MboaPharmacie> {
   }
 
   Future<void> _FetchMboaPharmacieData() async {
-    context.read<DrugCategoriesBloc>().add(FetchDrugCategoriess());
+    // context.read<DrugCategoriesBloc>().add(FetchDrugCategoriess());
     InternetConnection().CheckInternetConnectivity(context);
   }
 

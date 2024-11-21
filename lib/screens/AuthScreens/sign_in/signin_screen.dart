@@ -46,9 +46,9 @@ class _SignInState extends State<SignIn> with TickerProviderStateMixin {
   final _storage = const FlutterSecureStorage();
 
   Future<void> _readCredentialFromStorage() async {
-    emailController.text = (await _storage.read(key: LocalStorageKey.EMAIL))!;
+    emailController.text = (await _storage.read(key: LocalStorageKey.EMAIL)) ?? '';
     passwordController.text =
-        (await _storage.read(key: LocalStorageKey.PASSWORD))!;
+        (await _storage.read(key: LocalStorageKey.PASSWORD))?? '';
   }
 
   @override
