@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:mboa_pharmacie/mboa_pharmacie.dart';
 import 'package:mboa_pharmacie/resources/strings_manager.dart';
-import 'package:mboa_pharmacie/screens/Launching/OnBoardingScreen.dart';
-import 'package:mboa_pharmacie/screens/Launching/ChoseLangaugeScreen.dart';
 import 'package:mboa_pharmacie/screens/AuthScreens/sign_in/signin_screen.dart';
+import 'package:mboa_pharmacie/screens/Launching/ChoseLangaugeScreen.dart';
+import 'package:mboa_pharmacie/screens/Launching/OnBoardingScreen.dart';
 
 class Routes {
   static const String mboaPharmacieRoute = "/";
