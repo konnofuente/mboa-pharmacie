@@ -21,3 +21,6 @@ packages/
 .pub/
 build/
 .dart_tool/flutter_build/eab68ff40d55b7873541f4a360c573b7/.filecache
+
+# FVM Version Cache
+.fvm/
